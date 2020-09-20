@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img src="../../img/pic1.png" border="0" usemap="#planetmap" alt="Planets" />
+    <!-- map：带有可点击区域的图像映射 -->
+    <map name="planetmap" id="planetmap">
+        <!-- shap:default\rect\circ\poly -->
+        <area shape="circle" coords="60,60,10" href="http://www.iotzzh.com" target="_blank" alt="text1" />
+
+        <area shape="circle" coords="50,50,10" href="http://www.iotzzh.com" target="_blank" alt="text2" />
+
+        <area shape="rect" coords="0,0,50,50" href="http://www.iotzzh.com" target="_blank" alt="text3" />
+    </map>
+
+    <p><b>注释：</b>img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），所以我们同时向 map 元素添加了 "id" 和 "name" 属性。</p>
+
+    <!-- canvas -->
+    <h3>canvas画图：</h3>
+    <canvas id="c2d" width="300" height="150">浏览器不支持canvas</canvas>
+    <script>      
+        const canvas2d = document.querySelector('#c2d');
+        const ctx2d = canvas2d.getContext('2d');
+        // 绘制矩形
+        ctx2d.fillRect(30,50,100,50);
+        ctx2d.strokeRect(100,30,100,50);
+        ctx2d.clearRect(101,51,28,28);
+    </script>
+
+<!-- figure的使用，与p或者span进行对边  -->
+  <figure>
+    <figcaption>图片标题</figcaption>
+    <img src="../../img/pic1.png" width="100" height="100" />
+    <figcaption>图片标题尾部</figcaption>
+  </figure>
+  <p>图片标题</p>
+  <img src="../../img/pic1.png" width="100" height="100" />
+  <p>图片标题尾部</p>
+
+  <span>图片标题</span>
+  <img src="../../img/pic1.png" width="100" height="100" />
+  <span>图片标题尾部</span>
+
+</body>
+
+</html>
