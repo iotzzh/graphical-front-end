@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 布尔型属性不用赋值 -->
+    <!-- good -->
+    <input type="checkbox" checked>
+    <!-- not good  -->
+    <input type="checkbox" checked=true>
+
+    <!-- 减少标签的数量 -->
+    <!-- good -->
+    <img class="avatar" src="...">
+    <!-- not good -->
+    <span class="avatar">
+        <img src="...">
+    </span>
+
+    <!-- 尽量避免JavsScript生成的标签 -->
+    <!-- goood -->
+    <div id="append"><p>i'm child.</p></div>
+    <!-- not good -->
+    <div id="append"></div>
+    <script>
+        const element = document.querySelector('#append');
+        const child = document.createElement('p');
+        child.textContent = 'i\'m child.';
+        element.appendChild(child);
+    </script>
+
+</body>
+
+</html>

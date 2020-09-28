@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- HTML大小写不敏感，但是标签不要大写，DOCTYPE大写 -->
+    <!-- good -->
+    <p>Hello World</p>
+    <!-- not good -->
+    <P>Hello World</P>
+    
+    <!-- 用两个空格来代替制表符（tab） -->
+    <!-- good -->
+    <div>  前面有两个空格</div>
+    <!-- not good -->
+    <div>   前面有一个tab</div>
+
+    <!-- 嵌套元素应当缩进一次（即两个空格）。 -->
+    <!-- good -->
+    <div>
+        parent
+        <div>
+            child
+        </div>
+    </div>
+    <!-- not good -->
+    <div>
+        parent
+    <div>
+        child
+    </div>
+    </div>
+
+    <!-- 对于属性的定义，永远全部使用双引号，绝不要使用单引号 -->
+    <!-- good -->
+    <img src="../../img/browser.jpg" alt="browser">
+    <!-- not good -->
+    <img src='../../img/browser.jpg' alt='browser'>
+
+    <!-- 不要在自闭合（self-closing）元素的尾部添加斜线  -->
+    <!-- good -->
+    <br>
+    <!-- not good -->
+    <br />
+
+    <!-- 不要省略可选的结束标签 -->
+    <!-- good -->
+    <ul>
+        <li>Hello</li>
+        <li>World</li>
+    </ul>
+    <!-- not good -->
+    <ul>
+        <li>Hello
+        <li>World
+    </ul>
+</body>
+</html>
