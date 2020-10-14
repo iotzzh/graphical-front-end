@@ -94,7 +94,7 @@ HTML 属性应当按照以下给出的顺序依次排列，确保代码的易读
 * role,aria-*
 class 用于标识高度可复用组件，因此应该排在首位。id 用于标识具体组件，应当谨慎使用（例如，页面内的书签），因此排在第二位。
 示例：
-```
+```html
 <a class="..." id="..." data-toggle="modal" href="#">
   Example link
 </a>
@@ -112,7 +112,7 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 * 尽量避免JavsScript生成的标签
 
 示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 

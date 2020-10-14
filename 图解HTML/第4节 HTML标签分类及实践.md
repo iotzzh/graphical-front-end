@@ -170,7 +170,7 @@
 `<output>[HTML5]`	定义输出的一些类型。
 
 示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -215,7 +215,7 @@
 `<iframe>`	定义内联框架。
 
 frameset示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -233,7 +233,7 @@ frameset示例：
 <div style="text-align: center"><img src="img/4框架1.jpg">运行结果</div>
 
 iframe示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -257,7 +257,7 @@ iframe示例：
 `<figure>[HTML5]`	定义媒介内容的分组，以及它们的标题。
 
 示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -320,7 +320,7 @@ iframe示例：
 `<video>[HTML5]`	定义视频。
 
 示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -383,7 +383,7 @@ iframe示例：
 `<menuitem>`	定义用户可以从弹出菜单调用的命令/菜单项目。
 `<command>[HTML5]`	定义命令按钮。
 示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -429,7 +429,7 @@ iframe示例：
 `<colgroup>`	定义表格中供格式化的列组。
 
 示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -491,7 +491,7 @@ iframe示例：
 `<summary>[HTML5]`	为 `<details>` 元素定义可见的标题。
 
 示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -540,7 +540,7 @@ iframe示例：
 `<basefont>`	不赞成使用。定义页面中文本的默认字体、颜色或尺寸。
 
 示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -573,7 +573,7 @@ iframe示例：
 `<param>`定义对象的参数。
 
 示例：
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
