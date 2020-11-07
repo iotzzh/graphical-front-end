@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        div:nth-child(2) {
+            margin: 30px 20px;
+        }
+
+        div:nth-child(3) {
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div>没有外边距</div>
+    <div>上下外边距30px，左右外边距20px</div>
+    <div>左外边距30px</div>
+</body>
+</html>

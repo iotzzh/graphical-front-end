@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input:focus { outline: 1px solid red; border: 1px solid red;} 
+
+        #first-paragraph:target { color: red;}
+        #second-paragraph:target { text-decoration: underline;}
+
+    </style>
+</head>
+<body>
+    <input type="text"><br>
+
+    <a href="#first-paragraph">第一自然段</a>
+    <a href="#second-paragraph">第二自然段</a>
+
+    <div id="first-paragraph">这是第一自然段的内容</div>
+    <div id="second-paragraph">这是第二自然段的内容</div>
+</body>
+</html>

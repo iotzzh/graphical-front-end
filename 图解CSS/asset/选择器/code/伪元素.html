@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first-letter::first-letter{font-size: large; color: red;}
+
+        .content::first-line {font-style: italic; color: rgba(100, 0, 25, 0.5);}
+
+        .before::before { content: '添加before:'; color: sandybrown;}
+        .after::after {content: ':添加after'; color: skyblue;}
+    </style>
+</head>
+<body>
+    <div class="first-letter">测试伪元素::first-letter</div>
+    <div class="content">
+        <p>测试伪元素::first-line 第一自然段</p>
+        <p>测试伪元素::first-line 第二自然段</p>
+        <p>测试伪元素::first-line 第三自然段</p>
+    </div>
+
+    <div class="before">测试before</div>
+    <div class="after">测试after</div>
+
+</body>
+</html>

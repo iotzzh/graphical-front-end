@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 50px;
+            width: 100px;
+            border: 1px solid black;
+            margin: 1px;
+            padding: 1px;
+        }
+
+        span {
+            height: 100px;  /* 不起作用 */
+            width: 100px;   /* 不起作用 */
+            margin-top: 20px; /* 不起作用 */
+            margin-bottom: 20px; /* 不起作用 */
+            margin-left: 10px; /* 起作用 */
+            margin-right: 10px;/* 起作用 */
+        }
+    </style>
+</head>
+<body>
+    <div>块级盒子1</div>
+    <div>块级盒子2</div>
+
+    <span>内联盒子1</span>
+    <span>内联盒子2</span> <br>
+    <span>内联盒子3</span>
+    <span>内联盒子4</span>
+</body>
+</html>
