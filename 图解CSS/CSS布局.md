@@ -19,9 +19,9 @@ table布局相对容易，但是在开发中并不常用，一方面标签书写
 
 接下来，我们一起了解下各个布局~
 
-#### table布局
+## table布局
 利用table可以进行布局，但是使用table布局有些得不偿失，更多的还是使用table进行表格的设计。为什么说得不偿失呢？我们来看看table的优缺点：
-###### tables的缺点
+#### tables的缺点
 * Table要比其它html标记占更多的字节。(延迟下载时间，占用服务器更多的流量资源。)
 * Tablle会阻挡浏览器渲染引擎的渲染顺序。(会延迟页面的生成速度，让用户等待更久的时间。)
 * Table里显示图片时需要你把单个、有逻辑性的图片切成多个图。(增加设计的复杂度，增加页面加载时间，增加HTTP会话数。)
@@ -32,7 +32,7 @@ table布局相对容易，但是在开发中并不常用，一方面标签书写
 * table代码会让阅读者抓狂。(不但无法利用CSS，而且会你不知所云)
 * table一旦设计完成就变成死的，很难通过CSS让它展现新的面貌。
 
-###### Tables的优点
+#### Tables的优点
 在某些场合，使用Table是100%的适合、恰当和正确。比如，用table做表格是完全正确的。
 
 虽然不推荐，但是还是使用table做个布局看看~
@@ -79,7 +79,7 @@ table布局相对容易，但是在开发中并不常用，一方面标签书写
 ```
 ![](./asset/布局/table布局1.jpg)
 
-#### 传统布局
+## 传统布局
 传统布局是基于盒状模型，依赖 display 属性 + position属性 + float属性。它对于那些特殊布局非常不方便，比如，垂直居中就不容易实现。
 
 float知识点可参考《CSS浮动与清除》一节。float布局是布局中常见的一种方式，但是需要注意高度塌陷的问题。
@@ -118,7 +118,7 @@ float知识点可参考《CSS浮动与清除》一节。float布局是布局中�
 ```
 ![](./asset/布局/float布局1.jpg)
 
-#### flex布局
+## flex布局
 参考地址：
 
 http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
@@ -127,7 +127,7 @@ https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_C
 
 2009年，W3C提出了一种新的方案—-Flex布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。
 
-###### flex布局是什么
+#### flex布局是什么
 Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。
 任何一个容器都可以指定为 Flex 布局:
 ```css
@@ -151,14 +151,14 @@ Webkit 内核的浏览器，必须加上-webkit前缀:
 
 **注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。**
 
-###### 基本概念
+#### 基本概念
 采用 Flex 布局的元素，称为 Flex 容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称"项目"。
 ![](./asset/布局/flex布局1.jpg)
 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。
 项目默认沿主轴排列。单个项目占据的主轴空间叫做main size，占据的交叉轴空间叫做cross size。
 
-###### flex属性
-* flex-direction：属性决定主轴的方向（即项目的排列方向）
+#### flex属性
+###### flex-direction：属性决定主轴的方向（即项目的排列方向）
   * row（默认值）：主轴为水平方向，起点在左端。 
   * row-reverse：主轴为水平方向，起点在右端。
   * column：主轴为垂直方向，起点在上沿。
@@ -214,7 +214,8 @@ Webkit 内核的浏览器，必须加上-webkit前缀:
   ```
 ![](./asset/布局/flex布局direction.jpg)
 
-* flex-wrap：默认情况下，项目都排在一条线（又称"轴线"）上。flex-wrap属性定义，如果一条轴线排不下，如何换行。
+###### flex-wrap
+默认情况下，项目都排在一条线（又称"轴线"）上。flex-wrap属性定义，如果一条轴线排不下，如何换行。
   * nowrap（默认）：不换行。
   * wrap：换行，第一行在上方。
   * wrap-reverse：换行，第一行在下方。
@@ -263,7 +264,8 @@ Webkit 内核的浏览器，必须加上-webkit前缀:
 ```
 ![](./asset/布局/flex布局wrap.jpg)
 
-* flex-flow： 属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap
+###### flex-flow
+属性是flex-direction属性和flex-wrap属性的简写形式，默认值为row nowrap
   * ```<flex-direction>``` || ```<flex-wrap>```
 * justify-content: 定义了项目在主轴上的对齐方式。
   * flex-start（默认值）：左对齐
@@ -328,7 +330,8 @@ Webkit 内核的浏览器，必须加上-webkit前缀:
 ```
 ![](./asset/布局/flex布局justify-content.jpg)
 
-* align-items:定义项目在交叉轴上如何对齐。
+###### align-items
+定义项目在交叉轴上如何对齐。
   * flex-start：交叉轴的起点对齐。
   * flex-end：交叉轴的终点对齐。 
   * center：交叉轴的中点对齐。 
@@ -388,7 +391,8 @@ Webkit 内核的浏览器，必须加上-webkit前缀:
 ![](./asset/布局/flex布局align-items.jpg)
 
 
-* align-content：定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。 
+###### align-content
+定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。 
   * flex-start：与交叉轴的起点对齐。
   * flex-end：与交叉轴的终点对齐。
   * center：与交叉轴的中点对齐。
@@ -494,16 +498,255 @@ Webkit 内核的浏览器，必须加上-webkit前缀:
 ![](./asset/布局/flex布局align-content.jpg)
 
 ###### 项目属性
-* order：定义项目的排列顺序。数值越小，排列越靠前，默认为0。
+###### order
+定义项目的排列顺序。数值越小，排列越靠前，默认为0。
   *  ```<integer>```
-* flex-grow: 定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
+###### flex-grow
+定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。
   * ```<number>```; /* default 0 */
-* flex-shrink: 定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
+###### flex-shrink
+定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。
   * ```<number>```; /* default 1 */
-* flex-basis:定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。
+###### flex-basis
+定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。
   * ```<length> | auto```; /* default auto */
-* flex:是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
+###### flex
+flex是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。后两个属性可选。
   * ```none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]```
-* align-self:允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
+###### align-self
+允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。
   * ```auto | flex-start | flex-end | center | baseline | stretch;```
+
+## Grid布局
+参考网址：
+https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Grid_Layout
+http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html
+https://www.html.cn/archives/8510
+https://www.w3cschool.cn/lugfe/lugfe-ckg225zp.html
+https://www.jianshu.com/p/d183265a8dad
+
+#### 有了flex布局，为什么还需要grid布局呢？
+Grid 布局与 Flex 布局有一定的相似性，都可以指定容器内部多个项目的位置。但是，它们也存在重大区别。
+Flex 布局是轴线布局，只能指定"项目"针对轴线的位置，可以看作是一维布局。Grid 布局则是将容器划分成"行"和"列"，产生单元格，然后指定"项目所在"的单元格，可以看作是二维布局。
+
+#### 概述
+它将网页划分成一个个网格，可以任意组合不同的网格，做出各种各样的布局。以前，只能通过复杂的 CSS 框架达到的效果，现在浏览器内置了。
+
+#### 基本概念
+* 容器和项目
+采用网格布局的区域，称为"容器"（container）。容器内部采用网格定位的子元素，称为"项目"（item）。
+* 行和列
+容器里面的水平区域称为"行"（row），垂直区域称为"列"（column）。
+* 单元格
+行和列的交叉区域，称为"单元格"（cell）。
+正常情况下，n行和m列会产生n x m个单元格。比如，3行3列会产生9个单元格。
+* 网格线
+划分网格的线，称为"网格线"（grid line）。水平网格线划分出行，垂直网格线划分出列。
+正常情况下，n行有n + 1根水平网格线，m列有m + 1根垂直网格线，比如三行就有四根水平网格线。
+
+#### 容器属性
+###### display
+display: grid | inline-grid;
+注意，设为网格布局以后，容器子元素（项目）的float、display: inline-block、display: table-cell、vertical-align和column-*等设置都将失效。
+###### grid-template-columns,grid-template-rows 
+容器指定了网格布局以后，接着就要划分行和列。grid-template-columns属性定义每一列的列宽，grid-template-rows属性定义每一行的行高。
+```html
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+}
+```
+除了使用绝对单位，也可以使用百分比。
+
+* repeat()
+有时候，重复写同样的值非常麻烦，尤其网格很多时。这时，可以使用repeat()函数，简化重复的值。上面的代码用repeat()改写如下。
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-template-rows: repeat(3, 33.33%);
+}
+```
+repeat()接受两个参数，第一个参数是重复的次数（上例是3），第二个参数是所要重复的值。
+repeat()重复某种模式也是可以的。
+
+* auto-fill 关键字
+有时，单元格的大小是固定的，但是容器的大小不确定。如果希望每一行（或每一列）容纳尽可能多的单元格，这时可以使用auto-fill关键字表示自动填充。
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+}
+```
+* fr 关键字
+为了方便表示比例关系，网格布局提供了fr关键字（fraction 的缩写，意为"片段"）。如果两列的宽度分别为1fr和2fr，就表示后者是前者的两倍。
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+```
+* minmax()
+minmax()函数产生一个长度范围，表示长度就在这个范围之中。它接受两个参数，分别为最小值和最大值。
+```css
+grid-template-columns: 1fr 1fr minmax(100px, 1fr);
+```
+* auto 关键字
+auto关键字表示由浏览器自己决定长度。
+```css
+grid-template-columns: 100px auto 100px;
+```
+上面代码中，第二列的宽度，基本上等于该列单元格的最大宽度，除非单元格内容设置了min-width，且这个值大于最大宽度。
+* 网格线的名称
+grid-template-columns属性和grid-template-rows属性里面，还可以使用方括号，指定每一根网格线的名字，方便以后的引用。
+```css
+.container {
+  display: grid;
+  grid-template-columns: [c1] 100px [c2] 100px [c3] auto [c4];
+  grid-template-rows: [r1] 100px [r2] 100px [r3] auto [r4];
+}
+```
+
+* 布局实例
+grid-template-columns属性对于网页布局非常有用。两栏式布局只需要一行代码。
+```css
+.wrapper {
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+```
+传统的十二网格布局，写起来也很容易。
+```css
+grid-template-columns: repeat(12, 1fr);
+```
+
+###### 示例
+![](./asset/布局/grid布局1.jpg)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=, initial-scale=">
+	<meta http-equiv="X-UA-Compatible" content="">
+	<title></title>
+    <style>
+        .container1 { display: inline-grid;   
+                    grid-template-columns: 50px 50px 50px;
+                    grid-template-rows: 50px 50px 50px;
+                   }
+        .container1 .item { background-color:red; margin:5px;}
+
+        .container2 { display: inline-grid;
+        height:150px;width:150px;
+        grid-template-columns: repeat(3, 33.33%);
+        grid-template-rows: repeat(3, 33.33%);
+                   }
+        .container2 .item { background-color:blue; margin:5px;}
+
+        .container3 { display: inline-grid;height:150px;width:150px;
+        grid-template-columns: 1fr 2fr 3fr}
+        .container3 .item { background-color:yellow; margin:5px;}
+    </style>
+</head>
+<body>
+	<div class="container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+
+    <div class="container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+    <div class="container3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+</html>
+```
+* grid-row-gap 属性，grid-column-gap 属性,grid-gap 属性
+grid-row-gap属性设置行与行的间隔（行间距），grid-column-gap属性设置列与列的间隔（列间距）。
+```css
+.container {
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+```
+grid-gap属性是grid-column-gap和grid-row-gap的合并简写形式，语法如下。
+```css
+grid-gap: <grid-row-gap> <grid-column-gap>;
+```
+
+* grid-template-areas 属性
+网格布局允许指定"区域"（area），一个区域由单个或多个单元格组成。grid-template-areas属性用于定义区域。
+```css
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-areas: 'a b c'
+                       'd e f'
+                       'g h i';
+}
+```
+如果某些区域不需要利用，则使用"点"（.）表示。
+```css
+grid-template-areas: 'a . c'
+                     'd . f'
+                     'g . i';
+```
+
+* grid-auto-flow 属性
+划分网格以后，容器的子元素会按照顺序，自动放置在每一个网格。默认的放置顺序是"先行后列"，即先填满第一行，再开始放入第二行。
+grid-auto-flow属性除了设置成row和column，还可以设成row dense和column dense。这两个值主要用于，某些项目指定位置以后，剩下的项目怎么自动放置。
+
+* justify-items 属性，align-items 属性，place-items 属性
+justify-items属性设置单元格内容的水平位置（左中右），align-items属性设置单元格内容的垂直位置（上中下）。
+```css
+.container {
+  justify-items: start | end | center | stretch;
+  align-items: start | end | center | stretch;
+}
+```
+place-items属性是align-items属性和justify-items属性的合并简写形式。
+```css
+place-items: <align-items> <justify-items>;
+```
+* justify-content 属性，align-content 属性，place-content 属性
+justify-content属性是整个内容区域在容器里面的水平位置（左中右），align-content属性是整个内容区域的垂直位置（上中下）。
+```css
+.container {
+  justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
+  align-content: start | end | center | stretch | space-around | space-between | space-evenly;  
+}
+```
+place-content属性是align-content属性和justify-content属性的合并简写形式。
+```css
+place-content: <align-content> <justify-content>
+```
+* grid-auto-columns 属性，grid-auto-rows 属性
 
