@@ -1,3 +1,4 @@
+![](./asset/布局/布局概述.jpg)
 ## 何为布局
 此处说的布局是对HTML界面元素的布局，也就是对网页中的元素进行位置上的安排。
 那么我们为什么需要布局和如何布局呢？
@@ -749,4 +750,37 @@ place-content属性是align-content属性和justify-content属性的合并简写
 place-content: <align-content> <justify-content>
 ```
 * grid-auto-columns 属性，grid-auto-rows 属性
+有时候，一些项目的指定位置，在现有网格的外部。比如网格只有3列，但是某一个项目指定在第5行。这时，浏览器会自动生成多余的网格，以便放置项目。
+grid-auto-columns属性和grid-auto-rows属性用来设置，浏览器自动创建的多余网格的列宽和行高。它们的写法与grid-template-columns和grid-template-rows完全相同。如果不指定这两个属性，浏览器完全根据单元格内容的大小，决定新增网格的列宽和行高。
+```css
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-rows: 50px; 
+}
+```
 
+* grid-template 属性，grid 属性
+grid-template属性是grid-template-columns、grid-template-rows和grid-template-areas这三个属性的合并简写形式。
+grid属性是grid-template-rows、grid-template-columns、grid-template-areas、 grid-auto-rows、grid-auto-columns、grid-auto-flow这六个属性的合并简写形式。
+
+###### 项目属性
+* grid-column-start 属性，grid-column-end 属性，grid-row-start 属性，grid-row-end 属性
+项目的位置是可以指定的，具体方法就是指定项目的四个边框，分别定位在哪根网格线。
+grid-column-start属性：左边框所在的垂直网格线
+grid-column-end属性：右边框所在的垂直网格线
+grid-row-start属性：上边框所在的水平网格线
+grid-row-end属性：下边框所在的水平网格线
+
+* grid-column 属性，grid-row 属性
+grid-column属性是grid-column-start和grid-column-end的合并简写形式，grid-row属性是grid-row-start属性和grid-row-end的合并简写形式。
+
+* grid-area 属性
+grid-area属性指定项目放在哪一个区域。
+grid-area属性还可用作grid-row-start、grid-column-start、grid-row-end、grid-column-end的合并简写形式，直接指定项目的位置。
+
+* justify-self 属性，align-self 属性，place-self 属性
+justify-self属性设置单元格内容的水平位置（左中右），跟justify-items属性的用法完全一致，但只作用于单个项目。
+align-self属性设置单元格内容的垂直位置（上中下），跟align-items属性的用法完全一致，也是只作用于单个项目。
+place-self属性是align-self属性和justify-self属性的合并简写形式。
