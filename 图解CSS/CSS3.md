@@ -104,4 +104,72 @@ size 参数定义了渐变的大小。它可以有四个值：closest-side、far
 
 试一试: [http://jsrun.net/i8aKp/edit](http://jsrun.net/i8aKp/edit)
 
-## 
+## CSS3 文本效果
+#### 属性说明
+|属性|说明|CSS|支持程度|
+|---|---|---|---|
+|hanging-punctuation|规定标点字符是否位于线框之外|3|主流不支持|
+|punctuation-trim|规定是否对标点字符进行修剪|3|主流不支持|
+|text-align-last|设置如何对齐最后一行或紧挨着强制换行符之前的行|3|Safari不支持|
+|text-emphasis|向元素的文本应用重点标记以及重点标记的前景色|3|主流不支持|
+|text-justify|规定当 text-align 设置为 "justify" 时所使用的对齐方法|3|主流不支持|
+|text-outline|规定文本的轮廓|3|主流不支持|
+|text-overflow|规定当文本溢出包含元素时发生的事情|3|主流支持|
+|text-shadow|规定文本的换行规则|3|主流支持|
+|text-wrap|规定标点字符是否位于线框之外|3|主流不支持|
+|word-break|规定非中日韩文本的换行规则|3|主流支持|
+|word-wrap|允许对长的不可分割的单词进行分割并换行到下一行|3|主流支持|
+
+#### 主流支持的属性说明
+###### text-overflow
+语法：text-overflow: clip|ellipsis|string;
+|值|描述|
+|---|---|
+|clip|修剪文本|
+|ellipsis|显示省略符号来代表被修剪的文本|
+|string（暂不支持）|使用给定的字符串来代表被修剪的文本|
+###### 实例
+<div style="text-align: center"><img src="./asset/CSS3/CSS3-text-overflow.jpg" ></div>
+
+试一试: [http://jsrun.net/NUaKp/edit](http://jsrun.net/NUaKp/edit)
+
+###### text-shadow
+语法：text-shadow: h-shadow v-shadow blur color;
+|值|描述|
+|---|---|
+|h-shadow|必需。水平阴影的位置。允许负值|
+|v-shadow|必需。垂直阴影的位置。允许负值|
+|blur|可选。模糊的距离|
+|color|可选。阴影的颜色|
+
+###### 实例
+<div style="text-align: center"><img src="./asset/CSS3/CSS3-text-shadow.jpg" ></div>
+
+试一试: [http://jsrun.net/L9aKp/edit](http://jsrun.net/L9aKp/edit)
+
+###### word-break	
+语法：word-break: normal|break-all|keep-all;
+|值|描述|
+|---|---|
+|normal|使用浏览器默认的换行规则|
+|break-all|允许在单词内换行|
+|keep-all|只能在半角空格或连字符处换行|
+
+###### 实例
+<div style="text-align: center"><img src="./asset/CSS3/CSS3-word-break.jpg" ></div>
+
+试一试: [http://jsrun.net/69aKp/edit](http://jsrun.net/69aKp/edit)
+###### word-wrap
+语法：word-wrap: normal|break-word;
+|值|描述|
+|---|---|
+|normal|只在允许的断字点换行（浏览器保持默认处理）|
+|break-word|在长单词或URL 地址内部进行换行|
+
+###### 实例
+<div style="text-align: center"><img src="./asset/CSS3/CSS3-word-wrap.jpg" ></div>
+
+试一试: [http://jsrun.net/w9aKp/edit](http://jsrun.net/w9aKp/edit)
+
+
+
