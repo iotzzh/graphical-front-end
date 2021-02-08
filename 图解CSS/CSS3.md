@@ -171,5 +171,84 @@ size 参数定义了渐变的大小。它可以有四个值：closest-side、far
 
 试一试: [http://jsrun.net/w9aKp/edit](http://jsrun.net/w9aKp/edit)
 
+## CSS3 2D转换
+#### 转换属性
+|属性|描述|
+|---|---|
+|transform|标准：适用于2D或3D转换的元素|
+|-ms-transform|IE 9：适用于2D或3D转换的元素|
+|-webkit-transform|Safari：适用于2D或3D转换的元素|
+|transform-origin|允许您更改转化元素位置|
+
+#### 属性说明-transform
+> 语法：transform: none|transform-functions;
+
+###### transform-functions（2D）
+|方法|说明|
+|---|---|
+|none|定义不进行转换|
+|matrix(n,n,n,n,n,n)|定义 2D 转换，使用六个值的矩阵；matrix 方法有六个参数，包含旋转，缩放，移动（平移）和倾斜功能。matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )|
+|translate(x,y)|定义 2D 转换，沿着 X 和 Y 轴移动元素|
+|translateX(n)|定义 2D 转换，沿着 X 轴移动元素|
+|translateY(n)|定义 2D 转换，沿着 Y 轴移动元素|
+|scale(x,y)|定义 2D 缩放转换，改变元素的宽度和高度|
+|scaleX(n)|定义 2D 缩放转换，改变元素的宽度|
+|scaleY(n)|定义 2D 缩放转换，改变元素的高度|
+|rotate(angle)|定义 2D 旋转，在参数中规定角度|
+|skew(x-angle,y-angle)|定义 2D 倾斜转换，沿着 X 和 Y 轴|
+|skewX(angle)|定义 2D 倾斜转换，沿着 X 轴|
+|skewY(angle)|定义 2D 倾斜转换，沿着 Y 轴|
+
+###### 实例
+<div style="text-align: center"><img src="./asset/CSS3/CSS3-2D.jpg" ></div>
+
+试一试: [http://jsrun.net/GeaKp/edit](http://jsrun.net/GeaKp/edit)
+
+#### 属性说明-transform-origin
+该属性需要配合transform属性使用，单独使用不生效
+> 语法：transform-origin: x-axis y-axis z-axis;
+
+|值|说明|
+|---|---|
+|x-axis|定义视图被置于 X 轴的何处。可能的值：left、center、right、length、%|
+|y-axis|定义视图被置于 Y 轴的何处。可能的值：top、center、bottom、length、%|
+|z-axis|定义视图被置于 Z 轴的何处。可能的值：length|
+
+###### 实例
+<div style="text-align: center"><img src="./asset/CSS3/CSS3-trasnform-origin.jpg" ></div>
+
+试一试: [http://jsrun.net/QQaKp/edit](http://jsrun.net/QQaKp/edit)
+
+## CSS3 3D转换
+#### 转换属性
+|属性|描述|
+|---|---|
+|transform|标准：适用于2D或3D转换的元素|
+|transform-origin|允许您更改转化元素位置|
+|transform-style|规定被嵌套元素如何在 3D 空间中显示|
+|perspective|规定 3D 元素的透视效果|
+|perspective-origin|规定 3D 元素的底部位置|
+|backface-visibility|定义元素在不面对屏幕时是否可见|
+
+###### 3D转换方法
+|方法|说明|
+|---|---|
+|none|定义不进行转换|
+|matrix3d(n,n,n,n,n,n,
+n,n,n,n,n,n,n,n,n,n)|定义 3D 转换，使用 16 个值的 4x4 矩阵|
+|translate3d(x,y,z)|定义 3D 转换|
+|translateX(n)|定义 3D 转换，沿着 X 轴移动元素|
+|translateY(n)|定义 3D 转换，沿着 Y 轴移动元素|
+|translateZ(n)|定义 3D 转换，沿着 Z 轴移动元素|
+|scale3d(x,y,z)|定义 3D 缩放转换|
+|scaleX(n)|定义 3D 缩放转换，改变元素的宽度|
+|scaleY(n)|定义 3D 缩放转换，改变元素的高度|
+|scaleZ(n)|定义 3D 缩放转换，改变元素的高度|
+|rotate3d(x,y,z, angle)|定义 3D 旋转|
+|rotateX(angle)|定义沿 X 轴的 3D 旋转|
+|rotateY(angle)|定义沿 Y 轴的 3D 旋转转|
+|rotateZ(angle)|定义沿 Z 轴的 3D 旋转|
+|perspective(n)|定义 3D 转换元素的透视视图|
+
 
 
