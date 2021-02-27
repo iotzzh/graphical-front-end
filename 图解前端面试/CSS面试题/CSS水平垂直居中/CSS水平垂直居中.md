@@ -1,4 +1,6 @@
 在面试的过程中，经常会被问到有关CSS的一个问题，那便是居中问题。
+<div style="text-align: center"><img src="./asset/概述.jpg" >该图由以下分析得出，建议最后再看</div>
+
 首先是如何进行水平居中，然后如何进行垂直居中，最后如何进行水平垂直居中。
 接下来，一个问题一个问题研究~
 
@@ -262,4 +264,232 @@
 
 ## 垂直居中
 
+#### 父元素为块级元素，子元素为行内元素
+子元素为单行时，可以使用： line-height 为父元素的height,然后设置vertical-align:middel或者父元素设置： dispaly:table-cell;vertical-align: midde;
+
+子元素为多行时： 父元素设置： dispaly:table-cell;vertical-align: midde;
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		.parent {
+			height: 80px;
+			margin: 10px;
+            margin: 10px 0;
+		}
+
+		.parent1 {
+			background-color: white;
+            height: 100px;
+		}
+
+		.child1 {
+			background-color: red;
+            line-height: 100px;
+            vertiacl-align: middel;
+		}
+
+		.parent2 {
+			background-color: yellow;
+            width: 100px;
+            display: table-cell;
+            vertical-align: middle;
+		}
+
+		.child2 {
+			background-color: red;
+		}
+
+        .parent3 {
+			background-color: blue;
+            height: 100px;
+            display: table-cell;
+            vertical-align: middle;
+		}
+
+		.child3 {
+			background-color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="parent  parent1">
+		<span class="child1">单行</span>
+	</div>
+
+    <div class="parent  parent2">
+		<span class="child2">单行</span>
+	</div>
+
+	<div class="parent  parent3">
+		<span class="child3">多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行多行</span>
+	</div>
+</body>
+
+</html>
+```
+<div style="text-align: center"><img src="./asset/垂直居中1.jpg" ></div>
+
+#### 父元素为块级元素，子元素为块级元素
+###### 方案一： position定位
+###### 方案二：table-cell
+###### 方案三： flex
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		.parent {
+			height: 80px;
+			margin: 10px;
+            margin: 10px 0;
+		}
+
+    /* 方案一： 绝对定位 */
+		.parent1 {
+			background-color: white;
+            height: 100px;
+            position: relative;
+		}
+
+		.child1 {
+			background-color: red;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+		}
+
+/* 方案二：table-cell  */
+		.parent2 {
+			background-color: yellow;
+            width: 100px;
+            display: table-cell;
+            vertical-align: middle;
+		}
+
+		.child2 {
+			background-color: red;
+		}
+        /*方案三： flex */
+        .parent3 {
+			background-color: blue;
+            height: 100px;
+            display: flex;
+            align-items:center;
+		}
+
+		.child3 {
+			background-color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="parent  parent1">
+		<div class="child1">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+	</div>
+
+    <div class="parent  parent2">
+		<div class="child2">内容内容内容内容内容内</div>
+	</div>
+
+	<div class="parent  parent3">
+		<div class="child3">内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内内容内容内容内容内容内容内容内容内容内</div>
+	</div>
+</body>
+
+</html>
+```
+<div style="text-align: center"><img src="./asset/垂直居中2.jpg" ></div>
+
+
 ## 水平垂直居中
+垂直水平居中就可以利用上面的方法进行组合就好啦，下面推荐使用一些常见的方式：
+#### 方案一 flex
+```css
+align-items:center;
+```
+#### 方案二 position定位
+
+#### 方案三 grid
+align-items: center;
+justify-items:center;
+
+place-items: center;
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		.parent {
+			height: 80px;
+			margin: 10px;
+            margin: 10px 0;
+		}
+
+    /* 方案一： 绝对定位 */
+		.parent1 {
+			background-color: white;
+            height: 100px;
+            position: relative;
+		}
+
+		.child1 {
+			background-color: red;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 50%;
+            transform: translateX(-50%);
+		}
+
+/* 方案二：flex  */
+		.parent2 {
+			background-color: yellow;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+		}
+
+		.child2 {
+			background-color: red;
+		}
+
+        /*方案三： gird 1 */
+        .parent3 {
+			background-color: blue;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            /* 或者简写： place-items: center; */
+		}
+
+		.child3 {
+			background-color: red;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="parent  parent1">
+		<div class="child1">内容内容内容内容内容内容内容内容</div>
+	</div>
+
+    <div class="parent  parent2">
+		<div class="child2">内容内容内容内容内容内</div>
+	</div>
+
+	<div class="parent  parent3">
+		<div class="child3">内容内内容内容内容内容内容内容内容内容内容内</div>
+	</div>
+</body>
+
+</html>
+```
+<div style="text-align: center"><img src="./asset/水平处置居中.jpg" ></div>
