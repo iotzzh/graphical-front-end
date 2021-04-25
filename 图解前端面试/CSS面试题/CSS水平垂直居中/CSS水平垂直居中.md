@@ -412,6 +412,7 @@
 #### 方案一 flex
 ```css
 align-items:center;
+justify-content:center;
 ```
 #### 方案二 position定位
 
