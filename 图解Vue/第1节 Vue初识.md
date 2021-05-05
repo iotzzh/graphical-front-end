@@ -11,6 +11,7 @@ vue是什么？官网首页就有答案：渐进式JavaScript框架。有灵活�
 
 与React，Angular一样，vue也是基于MVVM的一种架构模式。
 #### MVC->MVP(省略)->MVVM
+###### MVC
 一般MVC的架构模式是前后端不分离，例如基于.net的ASP，基于java的JSP。那么为什么在MVC架构模式下开发的好好的，为什么还需要使用MVVM呢？我们用一张图来看看MVC模式做了什么。
 
 ![](./vue初识/mvc.png)
@@ -20,7 +21,7 @@ vue是什么？官网首页就有答案：渐进式JavaScript框架。有灵活�
 * 规范的还不够严格，如果对MVC理解使用得不好可能会造成内部代码的混乱。例如多个controller对应多个model的情况，那样维护起来就有些麻烦。
 * 随着多端（桌面，h5,小程序）应用的发展，controller慢慢的不再是控制路由和逻辑，而仅仅是逻辑，作为数据接口使用，而不需要view的参与。
 
-
+###### MVVM
 那么MVVM就很好吗？它本质上就是MVC的改进版，目前来看是不错的选择。
 
 MVVM（Model-View-ViewModel）框架的由来便是MVP（Model-View-Presenter）模式与WPF结合的应用方式时发展演变过来的一种新型架构框架。它立足于原有MVP框架并且把WPF的新特性糅合进去，以应对客户日益复杂的需求变化。
