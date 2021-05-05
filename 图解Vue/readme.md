@@ -7,8 +7,6 @@
 vue2.0教程：https://cn.vuejs.org/v2/guide/
 vue3.0教程：https://vue3js.cn/
 
-## 环境搭建
-
 ## 模板语法
 #### 指令
 #### 基本指令

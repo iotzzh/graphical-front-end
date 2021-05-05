@@ -10,7 +10,7 @@ vue是什么？官网首页就有答案：渐进式JavaScript框架。有灵活�
 相关功能有：解耦视图与数据，数据驱动，可复用的组件，前端路由，状态管理，虚拟DOM等。
 
 与React，Angular一样，vue也是基于MVVM的一种架构模式。
-#### MVVM与MVC
+#### MVC->MVP(省略)->MVVM
 一般MVC的架构模式是前后端不分离，例如基于.net的ASP，基于java的JSP。那么为什么在MVC架构模式下开发的好好的，为什么还需要使用MVVM呢？我们用一张图来看看MVC模式做了什么。
 
 ![](./vue初识/mvc.png)
