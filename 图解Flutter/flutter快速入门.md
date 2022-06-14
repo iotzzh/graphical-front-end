@@ -14,6 +14,7 @@ web：相较于SPA，基本没有什么有点，开发/调试/生态等都不如
 * 更新环境变量（flutter/国内镜像）
 * 设置android开发环境
 * 设置windows开发环境
+* 其他需要运行的开发环境...
 
 校验环境命令：```flutter doctor```
 
@@ -94,7 +95,7 @@ class Colleague {
 }
 ```
 main.dart
-```
+```dart
 import 'colleague.dart';
 import 'dart:math';
 
@@ -130,6 +131,8 @@ dart官网(中文)： https://dart.cn/
 pub.dev: https://pub.flutter-io.cn/
 
 ## 界面（UI组件）
+Flutter 从 React 中吸取灵感，通过现代化框架创建出精美的组件。它的核心思想是用 widget 来构建你的 UI 界面。
+widget又可以分为有状态和无状态两种组件。故名思意，一个内部没有状态数据，继承StatelessWidget，一个内部存在状态数据，继承StatefulWidget。
 
 
 参考地址：
@@ -137,3 +140,4 @@ flutter官网（中文）：https://flutter.cn/
 《Flutter实战 第二版》：https://book.flutterchina.club/
 dart官网(中文)： https://dart.cn/
 pub.dev: https://pub.flutter-io.cn/
+flutter在线运行地址：https://dartpad.cn/?id=e75b493dae1287757c5e1d77a0dc73f1
