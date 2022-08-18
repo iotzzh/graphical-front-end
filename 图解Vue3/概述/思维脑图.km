@@ -1,0 +1,132 @@
+{
+    "root": {
+        "data": {
+            "id": "cm8wbcj0glc0",
+            "created": 1660799576235,
+            "text": "Vue3"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cm8wbybd9nk0",
+                    "created": 1660799623662,
+                    "text": "Vue3基础",
+                    "layout_mind_offset": {
+                        "x": -8,
+                        "y": -3
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cm8wd2xl9ow0",
+                            "created": 1660799712077,
+                            "text": "初识"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cm8xav78qpk0",
+                                    "created": 1660802359628,
+                                    "text": "是什么"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cm8xb0bltgg0",
+                                    "created": 1660802370776,
+                                    "text": "为什么使用"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cm8xb3ektc00",
+                                    "created": 1660802377486,
+                                    "text": "项目创建"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cm8xbmxyc3s0",
+                                    "created": 1660802420016,
+                                    "text": "基础结构介绍"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cm8wd9clbgo0",
+                            "created": 1660799726045,
+                            "text": "模板"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cm8wdfsw49s0",
+                            "created": 1660799740091,
+                            "text": "样式"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cm8wdk8ut400",
+                            "created": 1660799749765,
+                            "text": "数据/事件"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cm8wdpbtnt40",
+                            "created": 1660799760827,
+                            "text": "生命周期"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cm8we0nw0340",
+                            "created": 1660799785501,
+                            "text": "计算属性与监听"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cm8we65he800",
+                            "created": 1660799797449,
+                            "text": "组件间通信"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cm8weaq06y00",
+                            "created": 1660799807397,
+                            "text": "组件高阶"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cm8wbzgmse00",
+                    "created": 1660799626157,
+                    "text": "Vue3 Router"
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "default",
+    "theme": "classic",
+    "version": "1.4.43"
+}
