@@ -103,6 +103,9 @@ const nullValue = null;
 nullValue === null;
 ```
 
+参考：
+typeof/instanceof实现原理：https://juejin.cn/post/6844903613584654344
+
 
 
 
