@@ -1,6 +1,7 @@
 由前面两个章节了解到，浏览器如同一个加工厂，在这个加工厂里面，有HTML、CSS、JS三大零件，然后浏览器将这些零件组装成一张张美丽的网页。
 
 HTML负责骨架，CSS负责样式，JS负责行为。
+<div style="text-align: center"><img src="img/html_css_js.png" ></div>
 
 #### 那么HTML是什么呢？
 HTML是Hyper Text Markup Language（超文本标记语言）的简写，是一种标记语言，而不是一种编程语言，是网页制作所必备的。超文本，本质也是文本。
