@@ -1,0 +1,319 @@
+{
+    "root": {
+        "data": {
+            "id": "cpuz0sx214g0",
+            "created": 1674010007604,
+            "text": "计算机",
+            "expandState": "expand"
+        },
+        "children": [
+            {
+                "data": {
+                    "id": "cpuz1i747rc0",
+                    "created": 1674010062632,
+                    "text": "计算机基础",
+                    "layout_mind_offset": {
+                        "x": -396,
+                        "y": -239
+                    },
+                    "layout_fish-bone-master_offset": {
+                        "x": -229,
+                        "y": 1
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cpv4oqgnx9k0",
+                            "created": 1674025988549,
+                            "text": "topic",
+                            "expandState": "expand"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cpv4pypmjq00",
+                                    "created": 1674026084869,
+                                    "text": "topic"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cpv4orzk2800",
+                            "created": 1674025991868,
+                            "text": "topic"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpv4ostelcw0",
+                            "created": 1674025993673,
+                            "text": "topic"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cpuz1v48h5s0",
+                    "created": 1674010090756,
+                    "text": "前端",
+                    "layout_mind_offset": {
+                        "x": -21,
+                        "y": -4
+                    },
+                    "layout_fish-bone-master_offset": {
+                        "x": -252,
+                        "y": 6
+                    },
+                    "expandState": "expand"
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cpv4tqyxk400",
+                            "created": 1674026381474,
+                            "text": "HTML",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cpv4uwhdcyg0",
+                                    "created": 1674026471837,
+                                    "text": "HTML教程",
+                                    "expandState": "expand"
+                                },
+                                "children": [
+                                    {
+                                        "data": {
+                                            "id": "cpv4wl9jp1c0",
+                                            "created": 1674026604148,
+                                            "text": "第一章 HTML简介"
+                                        },
+                                        "children": []
+                                    },
+                                    {
+                                        "data": {
+                                            "id": "cpv5bdm9o2g0",
+                                            "created": 1674027762965,
+                                            "text": "第二章 HTML标签"
+                                        },
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "data": {
+                                    "id": "cpv4v42fzdc0",
+                                    "created": 1674026488349,
+                                    "text": "HTML练习"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cpv4tz56wps0",
+                            "created": 1674026399267,
+                            "text": "CSS",
+                            "expandState": "collapse"
+                        },
+                        "children": [
+                            {
+                                "data": {
+                                    "id": "cpv4wdbw2uo0",
+                                    "created": 1674026586875,
+                                    "text": "CSS教程"
+                                },
+                                "children": []
+                            },
+                            {
+                                "data": {
+                                    "id": "cpv4wh0zu000",
+                                    "created": 1674026594923,
+                                    "text": "CSS练习"
+                                },
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "data": {
+                            "id": "cpv4u2f0anc0",
+                            "created": 1674026406391,
+                            "text": "Javascript"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpv4ud40pvk0",
+                            "created": 1674026429671,
+                            "text": "Vue"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpv4ugg48e00",
+                            "created": 1674026436933,
+                            "text": "React"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cpuz1vzxc480",
+                    "created": 1674010092672,
+                    "text": "移动端",
+                    "layout_mind_offset": {
+                        "x": -14,
+                        "y": -3
+                    },
+                    "layout_fish-bone-master_offset": {
+                        "x": 6,
+                        "y": -110
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cpv6k3gkn940",
+                            "created": 1674031267241,
+                            "text": "android"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpv6k8jmstc0",
+                            "created": 1674031278309,
+                            "text": "ios"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cpuz1ft36sw0",
+                    "created": 1674010057430,
+                    "text": "后端",
+                    "layout_mind_offset": {
+                        "x": -8,
+                        "y": -72
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cpuz1grjvjs0",
+                    "created": 1674010059514,
+                    "text": "桌面应用",
+                    "layout_fish-bone-master_offset": {
+                        "x": -269,
+                        "y": 11
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cpuz1hfy5vc0",
+                    "created": 1674010060989,
+                    "text": "其他程序",
+                    "layout_mind_offset": {
+                        "x": -412,
+                        "y": 155
+                    },
+                    "layout_fish-bone-master_offset": {
+                        "x": 163,
+                        "y": 123
+                    }
+                },
+                "children": [
+                    {
+                        "data": {
+                            "id": "cpv4xf6bw5k0",
+                            "created": 1674026669257,
+                            "text": "定时任务"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cpv4xisynjc0",
+                            "created": 1674026677155,
+                            "text": "串口程序"
+                        },
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "data": {
+                    "id": "cpuz3oz6zt40",
+                    "created": 1674010234118,
+                    "text": "测试",
+                    "layout_mind_offset": {
+                        "x": -10,
+                        "y": 63
+                    },
+                    "expandState": "expand",
+                    "layout_fish-bone-master_offset": {
+                        "x": 501,
+                        "y": 15
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cpuz2p2lw9k0",
+                    "created": 1674010155961,
+                    "text": "架构",
+                    "layout_mind_offset": {
+                        "x": -16,
+                        "y": -55
+                    },
+                    "expandState": "expand",
+                    "layout_fish-bone-master_offset": {
+                        "x": 21,
+                        "y": 1
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cpv2dj7qbu80",
+                    "created": 1674019468545,
+                    "text": "软技能",
+                    "layout_mind_offset": {
+                        "x": 371,
+                        "y": 213
+                    },
+                    "layout_fish-bone-master_offset": {
+                        "x": 95,
+                        "y": -27
+                    }
+                },
+                "children": []
+            }
+        ]
+    },
+    "template": "filetree",
+    "theme": "fresh-blue",
+    "version": "1.4.43"
+}
