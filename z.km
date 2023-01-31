@@ -20,7 +20,7 @@
                         "x": -229,
                         "y": 1
                     },
-                    "expandState": "expand"
+                    "expandState": "collapse"
                 },
                 "children": [
                     {
@@ -52,9 +52,39 @@
             },
             {
                 "data": {
+                    "id": "cpuz2p2lw9k0",
+                    "created": 1674010155961,
+                    "text": "架构",
+                    "layout_mind_offset": {
+                        "x": -16,
+                        "y": -55
+                    },
+                    "expandState": "expand",
+                    "layout_fish-bone-master_offset": {
+                        "x": 21,
+                        "y": 1
+                    }
+                },
+                "children": []
+            },
+            {
+                "data": {
+                    "id": "cpuz1ft36sw0",
+                    "created": 1674010057430,
+                    "text": "服务端",
+                    "layout_mind_offset": {
+                        "x": -8,
+                        "y": -72
+                    },
+                    "expandState": "expand"
+                },
+                "children": []
+            },
+            {
+                "data": {
                     "id": "cpuz1v48h5s0",
                     "created": 1674010090756,
-                    "text": "前端",
+                    "text": "web端",
                     "layout_mind_offset": {
                         "x": -21,
                         "y": -4
@@ -179,33 +209,13 @@
                 "children": [
                     {
                         "data": {
-                            "id": "cpv6k3gkn940",
-                            "created": 1674031267241,
-                            "text": "android"
-                        },
-                        "children": []
-                    },
-                    {
-                        "data": {
-                            "id": "cpv6k8jmstc0",
-                            "created": 1674031278309,
-                            "text": "ios"
+                            "id": "cq5z9mibexs0",
+                            "created": 1675127858453,
+                            "text": "微信小程序"
                         },
                         "children": []
                     }
                 ]
-            },
-            {
-                "data": {
-                    "id": "cpuz1ft36sw0",
-                    "created": 1674010057430,
-                    "text": "后端",
-                    "layout_mind_offset": {
-                        "x": -8,
-                        "y": -72
-                    }
-                },
-                "children": []
             },
             {
                 "data": {
@@ -215,9 +225,35 @@
                     "layout_fish-bone-master_offset": {
                         "x": -269,
                         "y": 11
-                    }
+                    },
+                    "expandState": "collapse"
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "cq5zbc9dni80",
+                            "created": 1675127992873,
+                            "text": "winform"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cq5zbeqryvs0",
+                            "created": 1675127998278,
+                            "text": "WPF"
+                        },
+                        "children": []
+                    },
+                    {
+                        "data": {
+                            "id": "cq5zbh7y34o0",
+                            "created": 1675128003670,
+                            "text": "Electron"
+                        },
+                        "children": []
+                    }
+                ]
             },
             {
                 "data": {
@@ -231,7 +267,8 @@
                     "layout_fish-bone-master_offset": {
                         "x": 163,
                         "y": 123
-                    }
+                    },
+                    "expandState": "collapse"
                 },
                 "children": [
                     {
@@ -258,7 +295,16 @@
                     "created": 1675071051844,
                     "text": "数据管理"
                 },
-                "children": []
+                "children": [
+                    {
+                        "data": {
+                            "id": "cq5zbux1ljc0",
+                            "created": 1675128033486,
+                            "text": "Mysql"
+                        },
+                        "children": []
+                    }
+                ]
             },
             {
                 "data": {
@@ -273,23 +319,6 @@
                     "layout_fish-bone-master_offset": {
                         "x": 501,
                         "y": 15
-                    }
-                },
-                "children": []
-            },
-            {
-                "data": {
-                    "id": "cpuz2p2lw9k0",
-                    "created": 1674010155961,
-                    "text": "架构",
-                    "layout_mind_offset": {
-                        "x": -16,
-                        "y": -55
-                    },
-                    "expandState": "expand",
-                    "layout_fish-bone-master_offset": {
-                        "x": 21,
-                        "y": 1
                     }
                 },
                 "children": []
