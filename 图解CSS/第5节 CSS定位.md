@@ -1,5 +1,7 @@
 CSS布局的核心是 position 属性，对元素盒子应用这个属性，可以相对于它在常规文档流中的位置重新定位。
+
 <div style="text-align: center"><img src="./asset/定位/img/定位概览.jpg" ></div>
+
 ###### 语法
 ```css
 position: value（默认值：static）
