@@ -1,41 +1,5 @@
 # D3 API Reference
 
-D3 is a [collection of modules](https://github.com/d3) that are designed to work together; you can use the modules independently, or you can use them together as part of the default build. The source and documentation for each module is available in its repository. Follow the links below to learn more. For changes between major versions, see [CHANGES](https://github.com/d3/d3/blob/master/CHANGES.md); see also the [release notes](https://github.com/d3/d3/releases) and the [3.x reference](https://github.com/d3/d3-3.x-api-reference/blob/master/API-Reference.md).
-
-* [Arrays](#arrays-d3-array) ([Statistics](#statistics), [Search](#search), [Iterables](#iterables), [Sets](#sets), [Transformations](#transformations), [Histograms](#histograms), [Interning](#interning))
-* [Axes](#axes-d3-axis)
-* [Brushes](#brushes-d3-brush)
-* [Chords](#chords-d3-chord)
-* [Colors](#colors-d3-color)
-* [Color Schemes](#color-schemes-d3-scale-chromatic)
-* [Contours](#contours-d3-contour)
-* [Voronoi Diagrams](#voronoi-diagrams-d3-delaunay)
-* [Dispatches](#dispatches-d3-dispatch)
-* [Dragging](#dragging-d3-drag)
-* [Delimiter-Separated Values](#delimiter-separated-values-d3-dsv)
-* [Easings](#easings-d3-ease)
-* [Fetches](#fetches-d3-fetch)
-* [Forces](#forces-d3-force)
-* [Number Formats](#number-formats-d3-format)
-* [Geographies](#geographies-d3-geo) ([Paths](#paths), [Projections](#projections), [Spherical Math](#spherical-math), [Spherical Shapes](#spherical-shapes), [Streams](#streams), [Transforms](#transforms))
-* [Hierarchies](#hierarchies-d3-hierarchy)
-* [Interpolators](#interpolators-d3-interpolate)
-* [Paths](#paths-d3-path)
-* [Polygons](#polygons-d3-polygon)
-* [Quadtrees](#quadtrees-d3-quadtree)
-* [Random Numbers](#random-numbers-d3-random)
-* [Scales](#scales-d3-scale) ([Continuous](#continuous-scales), [Sequential](#sequential-scales), [Diverging](#diverging-scales), [Quantize](#quantize-scales), [Ordinal](#ordinal-scales))
-* [Selections](#selections-d3-selection) ([Selecting](#selecting-elements), [Modifying](#modifying-elements), [Data](#joining-data), [Events](#handling-events), [Control](#control-flow), [Local Variables](#local-variables), [Namespaces](#namespaces))
-* [Shapes](#shapes-d3-shape) ([Arcs](#arcs), [Pies](#pies), [Lines](#lines), [Areas](#areas), [Curves](#curves), [Links](#links), [Symbols](#symbols), [Stacks](#stacks))
-* [Time Formats](#time-formats-d3-time-format)
-* [Time Intervals](#time-intervals-d3-time)
-* [Timers](#timers-d3-timer)
-* [Transitions](#transitions-d3-transition)
-* [Zooming](#zooming-d3-zoom)
-
-D3 uses [semantic versioning](http://semver.org/). The current version is exposed as d3.version.
-
-
 ## [Axes (d3-axis)](https://github.com/d3/d3-axis/tree/v3.0.0)
 
 Human-readable reference marks for scales.
@@ -97,32 +61,6 @@ Select a one- or two-dimensional region using the mouse or touch.
 * [*ribbon*.context](https://github.com/d3/d3-chord/blob/v3.0.1/README.md#ribbon_context) - set the render context.
 * [d3.ribbonArrow](https://github.com/d3/d3-chord/blob/v3.0.1/README.md#ribbonArrow) - create an arrow ribbon generator.
 * [*ribbonArrow*.headRadius](https://github.com/d3/d3-chord/blob/v3.0.1/README.md#ribbonArrow_headRadius) - set the arrowhead radius accessor.
-
-## [Colors (d3-color)](https://github.com/d3/d3-color/tree/v3.1.0)
-
-Color manipulation and color space conversion.
-
-* [d3.color](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color) - parse the given CSS color specifier.
-* [*color*.opacity](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_opacity) - the color’s opacity.
-* [*color*.rgb](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_rgb) - compute the RGB equivalent of this color.
-* [*color*.copy](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_copy) - return a copy of this color.
-* [*color*.brighter](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_brighter) - create a brighter copy of this color.
-* [*color*.darker](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_darker) - create a darker copy of this color.
-* [*color*.displayable](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_displayable) - returns true if the color is displayable on standard hardware.
-* [*color*.formatHex](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_formatHex) - returns the hexadecimal RRGGBB string representation of this color.
-* [*color*.formatHex8](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_formatHex8) - returns the hexadecimal RRGGBBAA string representation of this color.
-* [*color*.formatHsl](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_formatHsl) - returns the RGB string representation of this color.
-* [*color*.formatRgb](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_formatRgb) - returns the HSL string representation of this color.
-* [*color*.toString](https://github.com/d3/d3-color/blob/v3.1.0/README.md#color_toString) - returns the RGB string representation of this color.
-* [d3.rgb](https://github.com/d3/d3-color/blob/v3.1.0/README.md#rgb) - create a new RGB color.
-* [*rgb*.clamp](https://github.com/d3/d3-color/blob/v3.1.0/README.md#rgb_clamp) - returns copy of this color clamped to the RGB color space.
-* [d3.hsl](https://github.com/d3/d3-color/blob/v3.1.0/README.md#hsl) - create a new HSL color.
-* [*hsl*.clamp](https://github.com/d3/d3-color/blob/v3.1.0/README.md#hsl_clamp) - returns copy of this color clamped to the HSL color space.
-* [d3.lab](https://github.com/d3/d3-color/blob/v3.1.0/README.md#lab) - create a new Lab color.
-* [d3.gray](https://github.com/d3/d3-color/blob/v3.1.0/README.md#gray) - create a new Lab gray.
-* [d3.hcl](https://github.com/d3/d3-color/blob/v3.1.0/README.md#hcl) - create a new HCL color.
-* [d3.lch](https://github.com/d3/d3-color/blob/v3.1.0/README.md#lch) - create a new HCL color.
-* [d3.cubehelix](https://github.com/d3/d3-color/blob/v3.1.0/README.md#cubehelix) - create a new Cubehelix color.
 
 ## [Color Schemes (d3-scale-chromatic)](https://github.com/d3/d3-scale-chromatic/tree/v3.0.0)
 
@@ -277,15 +215,6 @@ Compute the Voronoi diagram of a set of two-dimensional points.
 * [*voronoi*.cellPolygon](https://github.com/d3/d3-delaunay/blob/v6.0.3/README.md#voronoi_cellPolygon) - return a cell as a polygon.
 * [*voronoi*.update](https://github.com/d3/d3-delaunay/blob/v6.0.3/README.md#voronoi_update) - update a voronoi diagram in place.
 
-## [Dispatches (d3-dispatch)](https://github.com/d3/d3-dispatch/tree/v3.0.1)
-
-Separate concerns using named callbacks.
-
-* [d3.dispatch](https://github.com/d3/d3-dispatch/blob/v3.0.1/README.md#dispatch) - create a custom event dispatcher.
-* [*dispatch*.on](https://github.com/d3/d3-dispatch/blob/v3.0.1/README.md#dispatch_on) - register or unregister an event listener.
-* [*dispatch*.copy](https://github.com/d3/d3-dispatch/blob/v3.0.1/README.md#dispatch_copy) - create a copy of a dispatcher.
-* [*dispatch*.call](https://github.com/d3/d3-dispatch/blob/v3.0.1/README.md#dispatch_call) - dispatch an event to registered listeners.
-* [*dispatch*.apply](https://github.com/d3/d3-dispatch/blob/v3.0.1/README.md#dispatch_apply) - dispatch an event to registered listeners.
 
 ## [Dragging (d3-drag)](https://github.com/d3/d3-drag/tree/v3.0.0)
 
@@ -302,34 +231,6 @@ Drag and drop SVG, HTML or Canvas using mouse or touch input.
 * [d3.dragDisable](https://github.com/d3/d3-drag/blob/v3.0.0/README.md#dragDisable) - prevent native drag-and-drop and text selection.
 * [d3.dragEnable](https://github.com/d3/d3-drag/blob/v3.0.0/README.md#dragEnable) - enable native drag-and-drop and text selection.
 * [*event*.on](https://github.com/d3/d3-drag/blob/v3.0.0/README.md#event_on) - listen for drag events on the current gesture.
-
-## [Delimiter-Separated Values (d3-dsv)](https://github.com/d3/d3-dsv/tree/v3.0.1)
-
-Parse and format delimiter-separated values, most commonly CSV and TSV.
-
-* [d3.csvParse](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#csvParse) - parse the given CSV string, returning an array of objects.
-* [d3.csvParseRows](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#csvParseRows) - parse the given CSV string, returning an array of rows.
-* [d3.csvFormat](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#csvFormat) - format the given array of objects as CSV.
-* [d3.csvFormatBody](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#csvFormatBody) - format the given array of objects as CSV.
-* [d3.csvFormatRows](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#csvFormatRows) - format the given array of rows as CSV.
-* [d3.csvFormatRow](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#csvFormatRow) - format the given row as CSV.
-* [d3.csvFormatValue](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#csvFormatValue) - format the given value as CSV.
-* [d3.tsvParse](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#tsvParse) - parse the given TSV string, returning an array of objects.
-* [d3.tsvParseRows](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#tsvParseRows) - parse the given TSV string, returning an array of rows.
-* [d3.tsvFormat](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#tsvFormat) - format the given array of objects as TSV.
-* [d3.tsvFormatBody](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#tsvFormatBody) - format the given array of objects as TSV.
-* [d3.tsvFormatRows](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#tsvFormatRows) - format the given array of rows as TSV.
-* [d3.tsvFormatRow](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#tsvFormatRow) - format the given row as TSV.
-* [d3.tsvFormatValue](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#tsvFormatValue) - format the given value as TSV.
-* [d3.dsvFormat](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#dsvFormat) - create a new parser and formatter for the given delimiter.
-* [*dsv*.parse](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#dsv_parse) - parse the given string, returning an array of objects.
-* [*dsv*.parseRows](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#dsv_parseRows) - parse the given string, returning an array of rows.
-* [*dsv*.format](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#dsv_format) - format the given array of objects.
-* [*dsv*.formatBody](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#dsv_formatBody) - format the given array of objects.
-* [*dsv*.formatRows](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#dsv_formatRows) - format the given array of rows.
-* [*dsv*.formatRow](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#dsv_formatRow) - format the given row.
-* [*dsv*.formatValue](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#dsv_formatValue) - format the given value.
-* [d3.autoType](https://github.com/d3/d3-dsv/blob/v3.0.1/README.md#autoType) - automatically infer value types for the given object.
 
 ## [Easings (d3-ease)](https://github.com/d3/d3-ease/tree/v3.0.1)
 
@@ -377,22 +278,6 @@ Easing functions for smooth animation.
 * [d3.easeBounce](https://github.com/d3/d3-ease/blob/v3.0.1/README.md#easeBounce) - an alias for easeBounceOut.
 * [d3.easeBounceOut](https://github.com/d3/d3-ease/blob/v3.0.1/README.md#easeBounceOut) - reverse bounce easing.
 * [d3.easeBounceInOut](https://github.com/d3/d3-ease/blob/v3.0.1/README.md#easeBounceInOut) - symmetric bounce easing.
-
-## [Fetches (d3-fetch)](https://github.com/d3/d3-fetch/tree/v3.0.1)
-
-Convenience methods on top of the Fetch API.
-
-* [d3.blob](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#blob) - get a file as a blob.
-* [d3.buffer](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#buffer) - get a file as an array buffer.
-* [d3.csv](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#csv) - get a comma-separated values (CSV) file.
-* [d3.dsv](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#dsv) - get a delimiter-separated values (CSV) file.
-* [d3.html](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#html) - get an HTML file.
-* [d3.image](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#image) - get an image.
-* [d3.json](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#json) - get a JSON file.
-* [d3.svg](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#svg) - get an SVG file.
-* [d3.text](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#text) - get a plain text file.
-* [d3.tsv](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#tsv) - get a tab-separated values (TSV) file.
-* [d3.xml](https://github.com/d3/d3-fetch/blob/v3.0.1/README.md#xml) - get an XML file.
 
 ## [Forces (d3-force)](https://github.com/d3/d3-force/tree/v3.0.0)
 
@@ -641,40 +526,6 @@ Layout algorithms for visualizing hierarchical data.
 * [*pack*.padding](https://github.com/d3/d3-hierarchy/blob/v3.1.2/README.md#pack_padding) - set the padding.
 * [d3.packSiblings](https://github.com/d3/d3-hierarchy/blob/v3.1.2/README.md#packSiblings) - pack the specified array of circles.
 * [d3.packEnclose](https://github.com/d3/d3-hierarchy/blob/v3.1.2/README.md#packEnclose) - enclose the specified array of circles.
-
-## [Interpolators (d3-interpolate)](https://github.com/d3/d3-interpolate/tree/v3.0.1)
-
-Interpolate numbers, colors, strings, arrays, objects, whatever!
-
-* [d3.interpolate](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolate) - interpolate arbitrary values.
-* [d3.interpolateNumber](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateNumber) - interpolate numbers.
-* [d3.interpolateRound](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateRound) - interpolate integers.
-* [d3.interpolateString](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateString) - interpolate strings with embedded numbers.
-* [d3.interpolateDate](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateDate) - interpolate dates.
-* [d3.interpolateArray](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateArray) - interpolate arrays of arbitrary values.
-* [d3.interpolateNumberArray](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateNumberArray) - interpolate arrays of numbers.
-* [d3.interpolateObject](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateObject) - interpolate arbitrary objects.
-* [d3.interpolateTransformCss](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateTransformCss) - interpolate 2D CSS transforms.
-* [d3.interpolateTransformSvg](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateTransformSvg) - interpolate 2D SVG transforms.
-* [d3.interpolateZoom](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateZoom) - zoom and pan between two views.
-* [*interpolateZoom*.rho](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolate_rho) - set the curvature *rho* of the zoom interpolator.
-* [d3.interpolateDiscrete](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateDiscrete) - generate a discrete interpolator from a set of values.
-* [d3.quantize](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#quantize) - generate uniformly-spaced samples from an interpolator.
-* [d3.interpolateRgb](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateRgb) - interpolate RGB colors.
-* [d3.interpolateRgbBasis](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateRgbBasis) - generate a B-spline through a set of colors.
-* [d3.interpolateRgbBasisClosed](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateRgbBasisClosed) - generate a closed B-spline through a set of colors.
-* [d3.interpolateHsl](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateHsl) - interpolate HSL colors.
-* [d3.interpolateHslLong](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateHslLong) - interpolate HSL colors, the long way.
-* [d3.interpolateLab](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateLab) - interpolate Lab colors.
-* [d3.interpolateHcl](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateHcl) - interpolate HCL colors.
-* [d3.interpolateHclLong](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateHclLong) - interpolate HCL colors, the long way.
-* [d3.interpolateCubehelix](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateCubehelix) - interpolate Cubehelix colors.
-* [d3.interpolateCubehelixLong](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateCubehelixLong) - interpolate Cubehelix colors, the long way.
-* [*interpolate*.gamma](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolate_gamma) - apply gamma correction during interpolation.
-* [d3.interpolateHue](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateHue) - interpolate a hue angle.
-* [d3.interpolateBasis](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateBasis) - generate a B-spline through a set of values.
-* [d3.interpolateBasisClosed](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#interpolateBasisClosed) - generate a closed B-spline through a set of values.
-* [d3.piecewise](https://github.com/d3/d3-interpolate/blob/v3.0.1/README.md#piecewise) - generate a piecewise linear interpolator from a set of values.
 
 ## [Paths (d3-path)](https://github.com/d3/d3-path/tree/v3.1.0)
 
@@ -1085,81 +936,7 @@ Stack shapes, placing one adjacent to another, as in a stacked bar chart.
 * [d3.stackOffsetSilhouette](https://github.com/d3/d3-shape/blob/v3.2.0/README.md#stackOffsetSilhouette) - center the streamgraph around zero.
 * [d3.stackOffsetWiggle](https://github.com/d3/d3-shape/blob/v3.2.0/README.md#stackOffsetWiggle) - minimize streamgraph wiggling.
 
-## [Time Formats (d3-time-format)](https://github.com/d3/d3-time-format/tree/v4.0.0)
 
-Parse and format times, inspired by strptime and strftime.
-
-* [d3.timeFormat](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#timeFormat) - alias for *locale*.format on the default locale.
-* [d3.timeParse](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#timeParse) - alias for *locale*.parse on the default locale.
-* [d3.utcFormat](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#utcFormat) -  alias for *locale*.utcFormat on the default locale.
-* [d3.utcParse](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#utcParse) -  alias for *locale*.utcParse on the default locale.
-* [d3.isoFormat](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#isoFormat) - an ISO 8601 UTC formatter.
-* [d3.isoParse](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#isoParse) - an ISO 8601 UTC parser.
-* [*locale*.format](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#locale_format) - create a time formatter.
-* [*locale*.parse](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#locale_parse) - create a time parser.
-* [*locale*.utcFormat](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#locale_utcFormat) - create a UTC formatter.
-* [*locale*.utcParse](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#locale_utcParse) - create a UTC parser.
-* [d3.timeFormatLocale](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#timeFormatLocale) - define a custom locale.
-* [d3.timeFormatDefaultLocale](https://github.com/d3/d3-time-format/blob/v4.1.0/README.md#timeFormatDefaultLocale) - define the default locale.
-
-## [Time Intervals (d3-time)](https://github.com/d3/d3-time/tree/v3.1.0)
-
-A calculator for humanity’s peculiar conventions of time.
-
-* [d3.timeInterval](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeInterval) - implement a new custom time interval.
-* [*interval*](https://github.com/d3/d3-time/blob/v3.1.0/README.md#_interval) - alias for *interval*.floor.
-* [*interval*.floor](https://github.com/d3/d3-time/blob/v3.1.0/README.md#interval_floor) - round down to the nearest boundary.
-* [*interval*.round](https://github.com/d3/d3-time/blob/v3.1.0/README.md#interval_round) - round to the nearest boundary.
-* [*interval*.ceil](https://github.com/d3/d3-time/blob/v3.1.0/README.md#interval_ceil) - round up to the nearest boundary.
-* [*interval*.offset](https://github.com/d3/d3-time/blob/v3.1.0/README.md#interval_offset) - offset a date by some number of intervals.
-* [*interval*.range](https://github.com/d3/d3-time/blob/v3.1.0/README.md#interval_range) - generate a range of dates at interval boundaries.
-* [*interval*.filter](https://github.com/d3/d3-time/blob/v3.1.0/README.md#interval_filter) - create a filtered subset of this interval.
-* [*interval*.every](https://github.com/d3/d3-time/blob/v3.1.0/README.md#interval_every) - create a filtered subset of this interval.
-* [*interval*.count](https://github.com/d3/d3-time/blob/v3.1.0/README.md#interval_count) - count interval boundaries between two dates.
-* [d3.timeMillisecond](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMillisecond), [d3.utcMillisecond](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMillisecond) - the millisecond interval.
-* [d3.timeMilliseconds](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMillisecond), [d3.utcMilliseconds](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMillisecond) - aliases for millisecond.range.
-* [d3.timeSecond](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSecond), [d3.utcSecond](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSecond) - the second interval.
-* [d3.timeSeconds](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSecond), [d3.utcSeconds](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSecond) - aliases for second.range.
-* [d3.timeMinute](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMinute), [d3.utcMinute](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMinute) - the minute interval.
-* [d3.timeMinutes](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMinute), [d3.utcMinutes](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMinute) - aliases for minute.range.
-* [d3.timeHour](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeHour), [d3.utcHour](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeHour) - the hour interval.
-* [d3.timeHours](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeHour), [d3.utcHours](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeHour) - aliases for hour.range.
-* [d3.timeDay](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeDay), [d3.utcDay](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeDay), [d3.unixDay](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeDay) - the day interval.
-* [d3.timeDays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeDay), [d3.utcDays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeDay), [d3.unixDays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeDay) - aliases for day.range.
-* [d3.timeWeek](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeWeek), [d3.utcWeek](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeWeek) - aliases for sunday.
-* [d3.timeWeeks](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeWeek), [d3.utcWeeks](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeWeek) - aliases for week.range.
-* [d3.timeSunday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSunday), [d3.utcSunday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSunday) - the week interval, starting on Sunday.
-* [d3.timeSundays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSunday), [d3.utcSundays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSunday) - aliases for sunday.range.
-* [d3.timeMonday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMonday), [d3.utcMonday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMonday) - the week interval, starting on Monday.
-* [d3.timeMondays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMonday), [d3.utcMondays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMonday) - aliases for monday.range.
-* [d3.timeTuesday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeTuesday), [d3.utcTuesday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeTuesday) - the week interval, starting on Tuesday.
-* [d3.timeTuesdays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeTuesday), [d3.utcTuesdays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeTuesday) - aliases for tuesday.range.
-* [d3.timeWednesday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeWednesday), [d3.utcWednesday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeWednesday) - the week interval, starting on Wednesday.
-* [d3.timeWednesdays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeWednesday), [d3.utcWednesdays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeWednesday) - aliases for wednesday.range.
-* [d3.timeThursday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeThursday), [d3.utcThursday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeThursday) - the week interval, starting on Thursday.
-* [d3.timeThursdays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeThursday), [d3.utcThursdays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeThursday) - aliases for thursday.range.
-* [d3.timeFriday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeFriday), [d3.utcFriday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeFriday) - the week interval, starting on Friday.
-* [d3.timeFridays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeFriday), [d3.utcFridays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeFriday) - aliases for friday.range.
-* [d3.timeSaturday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSaturday), [d3.utcSaturday](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSaturday) - the week interval, starting on Saturday.
-* [d3.timeSaturdays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSaturday), [d3.utcSaturdays](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeSaturday) - aliases for saturday.range.
-* [d3.timeMonth](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMonth), [d3.utcMonth](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMonth) - the month interval.
-* [d3.timeMonths](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMonth), [d3.utcMonths](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeMonth) - aliases for month.range.
-* [d3.timeYear](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeYear), [d3.utcYear](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeYear) - the year interval.
-* [d3.timeYears](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeYear), [d3.utcYears](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeYear) - aliases for year.range.
-* [d3.timeTicks](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeTicks), [d3.utcTicks](https://github.com/d3/d3-time/blob/v3.1.0/README.md#utcTicks) -
-* [d3.timeTickInterval](https://github.com/d3/d3-time/blob/v3.1.0/README.md#timeTickInterval), [d3.utcTickInterval](https://github.com/d3/d3-time/blob/v3.1.0/README.md#utcTickInterval) -
-
-## [Timers (d3-timer)](https://github.com/d3/d3-timer/tree/v3.0.1)
-
-An efficient queue for managing thousands of concurrent animations.
-
-* [d3.now](https://github.com/d3/d3-timer/blob/v3.0.1/README.md#now) - get the current high-resolution time.
-* [d3.timer](https://github.com/d3/d3-timer/blob/v3.0.1/README.md#timer) - schedule a new timer.
-* [*timer*.restart](https://github.com/d3/d3-timer/blob/v3.0.1/README.md#timer_restart) - reset the timer’s start time and callback.
-* [*timer*.stop](https://github.com/d3/d3-timer/blob/v3.0.1/README.md#timer_stop) - stop the timer.
-* [d3.timerFlush](https://github.com/d3/d3-timer/blob/v3.0.1/README.md#timerFlush) - immediately execute any eligible timers.
-* [d3.timeout](https://github.com/d3/d3-timer/blob/v3.0.1/README.md#timeout) - schedule a timer that stops on its first callback.
-* [d3.interval](https://github.com/d3/d3-timer/blob/v3.0.1/README.md#interval) - schedule a timer that is called with a configurable period.
 
 ## [Transitions (d3-transition)](https://github.com/d3/d3-transition/tree/v3.0.1)
 
