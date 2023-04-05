@@ -20,7 +20,10 @@ web：相较于SPA，基本没有什么优点，开发/调试/生态等都不如
 
 参考地址：
 安装方式：https://flutter.cn/docs/get-started/install/windows
+
 镜像选择：https://flutter.cn/community/china
+
+windows镜像配置：https://blog.csdn.net/qq_28948031/article/details/119638296
 
 ## 概览
 从前端开发角度出发来看flutter的组成部分
@@ -127,7 +130,9 @@ void main(List<String> args) {
 
 参考地址：
 Dart开发预览：https://dart.cn/guides/language/language-tour
+
 dart官网(中文)： https://dart.cn/
+
 pub.dev: https://pub.flutter-io.cn/
 
 ## 界面（UI组件）
@@ -559,7 +564,11 @@ class Demo1SecondePageState extends State<Demo1SecondePage> {
 
 参考地址：
 flutter官网（中文）：https://flutter.cn/
+
 《Flutter实战 第二版》：https://book.flutterchina.club/
+
 dart官网(中文)： https://dart.cn/
+
 pub.dev: https://pub.flutter-io.cn/
+
 flutter在线运行地址：https://dartpad.cn/?id=e75b493dae1287757c5e1d77a0dc73f1
