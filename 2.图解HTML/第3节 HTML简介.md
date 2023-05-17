@@ -4,7 +4,7 @@ HTML负责骨架，CSS负责样式，JS负责行为。
 <div style="text-align: center"><img src="img/html_css_js.png" ></div>
 
 #### 那么HTML是什么呢？
-HTML是Hyper Text Markup Language（超文本标记语言）的简写，是一种标记语言，而不是一种编程语言，是网页制作所必备的。超文本，本质也是文本。
+HTML是Hyper Text Markup Language（超文本标记语言）的简写，**是一种标记语言，而不是一种编程语言，**是网页制作所必备的。超文本，本质也是文本。
 
 自HTML3.2之后，由W3C推荐标准，定义了多种类型的元素（div，p...）和众多类型的属性值(id,name...)。
 
@@ -43,6 +43,9 @@ html4:
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
             "http://www.w3.org/TR/html4/strict.dtd">
 ```
+
+注：现在都用HTML5，基本上不再使用其他版本。
+
 ###### 根标签（html）
 html文档的最高节点标签。
 ###### 元数据（meta）
@@ -60,6 +63,7 @@ body元素是网页的主体部分，网页的内容都写在里面，包括文�
 我们编写网页的头部在head里编写，主体是在body内编写。在head里面可编写的内容大多是固定的，而在主体中的标签却是繁多且灵活组合使用的。
 
 带5标识的，是HTML5新增的标签：
+https://www.w3school.com.cn/tags/index.asp
 <div style="text-align: center"><img src="img/3HTML标签.jpg"></div>
 
 #### 标签的分类
