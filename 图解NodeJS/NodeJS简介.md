@@ -4,6 +4,10 @@ Node.js 是一个事件驱动 I/O 服务端 JavaScript 环境，基于 Google �
 NodeJS就是js的运行时，就像java的jvm，和C#的CLR。
 
 node下载地址：https://nodejs.org/en/
+ http://nodejs.cn/download/
+nvm安装地址： http://nvm.uihtm.com/
+
+nvm简介：一个nodejs版本管理工具！
 
 ###### 注：
 Firefox 具有 SpiderMonkey
@@ -16,6 +20,11 @@ nvm-windows下载地址：https://github.com/coreybutler/nvm-windows/releases
 
 ## JS在浏览器中，与在Node中的区别：
 不能使用DOM/BOM API，额外添加了NodeJS提供的API。
+* 无法访问dom和window对象
+* 可以访问文件系统访问功能等
+
+* 不需要像浏览器兼容老版本
+* 使用CommonJS模块系统，而浏览器使用ES模块标准，也就是node.js使用require，浏览器中使用import
 #### 浏览器中的JS
 核心：ECMAScript
 Web API: DOM、BOM、AJAX、Storage、console、定时器、alert/confirm....
