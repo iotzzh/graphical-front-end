@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+div {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(white, #0089FF);
+  border-radius: 50%;
+}
+
+.point {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  animation: rotate 2s linear infinite;
+  margin: 50px auto;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="point"></div>
+      </div>
+</body>
+</html>
