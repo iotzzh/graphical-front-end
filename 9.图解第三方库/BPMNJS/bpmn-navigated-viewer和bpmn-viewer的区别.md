@@ -7,3 +7,45 @@
 3. 使用场景：bpmn-navigated-viewer模块通常适用于需要深入探索和交互的BPMN图形，例如进行流程分析、优化或监控等。它适用于需要动态浏览和导航BPMN流程的用户界面。相反，bpmn-viewer模块更适合那些只需要在应用程序中静态显示和呈现BPMN图形的场景，例如文档查看器或流程展示页面。
 
 总结起来，bpmn-navigated-viewer模块提供了更丰富的导航和交互功能，适用于动态探索和导航BPMN图形的应用场景。而bpmn-viewer模块则专注于静态的BPMN图形展示，适用于简单的图形加载和展示需求。根据您的具体需求和应用场景，选择适合的模块来满足您的要求。
+
+## NavigatedViewer
+```javascript
+export default function NavigatedViewer(options) {
+  Viewer.call(this, options);
+}
+
+inherits(NavigatedViewer, Viewer);
+
+
+NavigatedViewer.prototype._navigationModules = [
+  KeyboardMoveModule,
+  MoveCanvasModule,
+  ZoomScrollModule
+];
+
+NavigatedViewer.prototype._modules = [].concat(
+  Viewer.prototype._modules,
+  NavigatedViewer.prototype._navigationModules
+);
+```
+
+## Viewer
+```javascript
+export default function Viewer(options) {
+  BaseViewer.call(this, options);
+}
+
+inherits(Viewer, BaseViewer);
+
+// modules the viewer is composed of
+Viewer.prototype._modules = [
+  CoreModule,
+  TranslateModule,
+  SelectionModule,
+  OverlaysModule,
+  DrilldownModdule
+];
+
+// default moddle extensions the viewer is composed of
+Viewer.prototype._moddleExtensions = {};
+```
