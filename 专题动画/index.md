@@ -14,13 +14,6 @@ http://ianlunn.github.io/Hover/
 ### csshake
 https://elrumordelaluz.github.io/csshake/
 
-### 在线动画代码生成：animista
-https://animista.net/play/basic/rotate-scale
-
-### 在线动画代码生成：CSS Animation Kit
-https://angrytools.com/css/animation/
-
-
 ## JS动画
 
 ### GSAP
