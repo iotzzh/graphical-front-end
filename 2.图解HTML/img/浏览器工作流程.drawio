@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="ktMm_VH_tZYyzxc7JvaZ" name="Page-1">
+        <mxGraphModel dx="688" dy="563" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#DEDEDE" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;strokeColor=#000000;" edge="1" parent="1" source="2" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="HTML" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="92" y="101" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;strokeColor=#000000;" edge="1" parent="1" source="3" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="CSS" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="274" y="101" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=16;strokeColor=#000000;" edge="1" parent="1" source="4" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="JavaScript" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="456" y="101" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=16;strokeColor=#000000;" edge="1" parent="1" source="5" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="浏览器加工（内核）" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="256" y="292" width="156" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="网页页面" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;strokeColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="274" y="448" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
