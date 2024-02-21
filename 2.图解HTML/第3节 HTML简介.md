@@ -177,12 +177,16 @@ https://www.w3school.com.cn/tags/index.asp
 * 一个推崇全栈开发的前端开发人员
 * 微信: itrzzh
 ![微信号](../images/微信号.png)
+
 * 公众号：全栈道
 ![公众号](../images/公众号.jpg)
+
 * 个人网站：https://www.iotzzh.com
 ![微信号](../images/个人网站.png)
+
 * 知识星球：全栈道
 ![微信号](../images/星球.jpg)
+
 * B站：https://space.bilibili.com/285025688
 * 抖音：全栈道
 * github：https://github.com/iotzzh
