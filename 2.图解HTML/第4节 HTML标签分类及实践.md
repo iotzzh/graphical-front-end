@@ -1,4 +1,4 @@
-<div style="text-align: center"><img src="img/4HTML标签分类.png"></div>
+<div style="text-align: center"><img src="./img/4HTML标签分类.png"></div>
 
 通过上一节的了解，我们知道html标签是构建网页结构的关键，而且它的种类繁多。为了更好的了解和使用它们，本章节将在功能上对它们进行分类，了解这些标签的功能。如果有分类不太精准的地方，还望不吝指正。
 当然这些标签并不是都需要记住，最初只需要记住常用的即可。随着不断的使用，慢慢就会熟悉大部分标签的。
@@ -190,7 +190,7 @@
 
 ```
 
-<div style="text-align: center"><img src="img/4HTML格式标签.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4HTML格式标签.jpg">运行结果</div>
 
 #### 表单标签
 `<form>`	定义供用户输入的 HTML 表单。
@@ -243,7 +243,7 @@
         <br><label for="">Email:</label><input type="email" value="956159241@qq.com">
         <br><label for="">File:</label><input type="file">
         <br><label for="">Hidden:</label><input type="hidden">
-        <br><label for="">Image:</label><input type="image" src='../../img/pic1.png'>
+        <br><label for="">Image:</label><input type="image" src='../.././img/pic1.png'>
         <br><label for="">Month:</label><input type="month">
         <br><label for="">Number:</label><input type="number">
         <br><label for="">Password:</label><input type="password">
@@ -258,7 +258,7 @@
 </body>
 </html>
 ```
-<div style="text-align: center"><img src="img/4表单标签.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4表单标签.jpg">运行结果</div>
 
 #### 框架标签
 `<frame>`	定义框架集的窗口或框架。
@@ -285,7 +285,7 @@ frameset示例：
 </frameset>
 </html>
 ```
-<div style="text-align: center"><img src="img/4框架1.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4框架1.jpg">运行结果</div>
 
 iframe示例：
 ```html
@@ -301,7 +301,7 @@ iframe示例：
 </body>
 </html>
 ```
-<div style="text-align: center"><img src="img/4框架2.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4框架2.jpg">运行结果</div>
 
 #### 图像标签
 `<img>`	定义图像。
@@ -328,7 +328,7 @@ iframe示例：
 </head>
 
 <body>
-    <img src="../../img/pic1.png" border="0" usemap="#planetmap" alt="Planets" alt="这是一张图片" />
+    <img src="../.././img/pic1.png" border="0" usemap="#planetmap" alt="Planets" alt="这是一张图片" />
     <!-- map：带有可点击区域的图像映射 -->
     <map name="planetmap" id="planetmap">
         <!-- shap:default\rect\circ\poly -->
@@ -356,22 +356,22 @@ iframe示例：
 <!-- figure的使用，与p或者span进行对边  -->
   <figure>
     <figcaption>图片标题</figcaption>
-    <img src="../../img/pic1.png" width="100" height="100" />
+    <img src="../.././img/pic1.png" width="100" height="100" />
     <figcaption>图片标题尾部</figcaption>
   </figure>
   <p>图片标题</p>
-  <img src="../../img/pic1.png" width="100" height="100" />
+  <img src="../.././img/pic1.png" width="100" height="100" />
   <p>图片标题尾部</p>
 
   <span>图片标题</span>
-  <img src="../../img/pic1.png" width="100" height="100" />
+  <img src="../.././img/pic1.png" width="100" height="100" />
   <span>图片标题尾部</span>
 
 </body>
 
 </html>
 ```
-<div style="text-align: center"><img src="img/4图像标签.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4图像标签.jpg">运行结果</div>
 
 #### 音频/视频标签
 `<audio>[HTML5]`	定义声音内容。
@@ -406,7 +406,7 @@ iframe示例：
 
 </html>
 ```
-<div style="text-align: center"><img src="img/4音频视频.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4音频视频.jpg">运行结果</div>
 
 #### 链接标签
 `<a>`	定义锚。
@@ -489,7 +489,7 @@ iframe示例：
 </body>
 </html>
 ```
-<div style="text-align: center"><img src="img/4列表标签.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4列表标签.jpg">运行结果</div>
 
 #### 表格标签
 `<table>`	定义表格
@@ -559,7 +559,7 @@ iframe示例：
 
 </html>
 ```
-<div style="text-align: center"><img src="img/4表格标签.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4表格标签.jpg">运行结果</div>
 
 #### 样式/节点标签
 `<style>`	定义文档的样式信息。
@@ -626,7 +626,7 @@ iframe示例：
 </body>
 </html>
 ```
-<div style="text-align: center"><img src="img/4样式节点标签.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4样式节点标签.jpg">运行结果</div>
 
 #### 元信息标签
 `<meta>`	定义关于 HTML 文档的元信息。
@@ -659,7 +659,7 @@ iframe示例：
 </body>
 </html>
 ```
-<div style="text-align: center"><img src="img/4元信息标签.jpg">运行结果</div>
+<div style="text-align: center"><img src="./img/4元信息标签.jpg">运行结果</div>
 
 #### 编程相关标签
 
@@ -698,7 +698,7 @@ iframe示例：
 </html>
 ```
 
-<div style="text-align: center"><img src="img/4脚本标签.jpg"><div>运行结果</div></div>
+<div style="text-align: center"><img src="./img/4脚本标签.jpg"><div>运行结果</div></div>
 
 个别标签没有展示示例，有些是不推荐使用的，有些是未被各大浏览器采用的标签。除此之外，以上便是目前可使用的全部标签了，虽然很多时候div,span就足以完成你想要的界面，但是如果能让标签更具语义化，标签自身自带样式，省去你写不必要的css，这样子岂不是更好？
 
@@ -707,16 +707,16 @@ iframe示例：
 ## 关于我
 * 一个推崇全栈开发的前端开发人员
 * 微信: itrzzh
-![微信号](../images/微信号.png)
+<div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
 
 * 公众号：全栈道
-![公众号](../images/公众号.jpg)
+<div style="text-align: center"><img src="../images/公众号.jpg" style="max-height: 200px;width: auto;"></div>
 
 * 个人网站：https://www.iotzzh.com
-![微信号](../images/个人网站.png)
+<div style="text-align: center"><img src="../images/个人网站.png" style="max-height: 200px;width: auto;"></div>
 
 * 知识星球：全栈道
-![微信号](../images/星球.jpg)
+<div style="text-align: center"><img src="../images/星球.jpg" style="max-height: 200px;width: auto;"></div>
 
 * B站：https://space.bilibili.com/285025688
 * 抖音：全栈道
@@ -725,4 +725,4 @@ iframe示例：
 
 ## 捐赠鼓励
 开源不易，如果《全栈道》对你有些帮助，可以请作者喝杯咖啡，算是对开源做出的一点点鼓励吧！
-![微信号](../images/打赏.jpg)
+<div style="text-align: center"><img src="../images/打赏.jpg" style="max-height: 200px;width: auto;"></div>

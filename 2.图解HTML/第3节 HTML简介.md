@@ -1,8 +1,8 @@
-<div style="text-align: center"><img src="img/html_css_js.png" ></div>
+<div style="text-align: center"><img src="./img/3HTML基本结构图.jpg"></div>
 由前面两个章节了解到，浏览器如同一个加工厂，在这个加工厂里面，有HTML、CSS、JS三大零件，然后浏览器将这些零件组装成一张张美丽的网页。
 
 HTML负责骨架，CSS负责样式，JS负责行为。
-
+<div style="text-align: center"><img src="./img/html_css_js.png" ></div>
 ## 那么HTML是什么呢？
 HTML是Hyper Text Markup Language（超文本标记语言）的简写，**是一种标记语言，而不是一种编程语言**，是网页制作所必备的。超文本，本质也是文本。
 
@@ -14,7 +14,7 @@ HTML是Hyper Text Markup Language（超文本标记语言）的简写，**是一
 单标签: `<标签名 属性名1="属性值" 属性名2="属性值">`
 
 ### HTML文档基本结构
-<div style="text-align: center"><img src="img/3HTML基本结构图.jpg"></div>
+<div style="text-align: center"><img src="./img/3HTML基本结构图.jpg"></div>
 
 ###### HTML文档基本结构示例
 ```html
@@ -64,7 +64,7 @@ body元素是网页的主体部分，网页的内容都写在里面，包括文�
 
 带5标识的，是HTML5新增的标签：
 https://www.w3school.com.cn/tags/index.asp
-<div style="text-align: center"><img src="img/3HTML标签.jpg"></div>
+<div style="text-align: center"><img src="./img/3HTML标签.jpg"></div>
 
 ## 标签的分类
 如此多的标签，看得眼花缭乱，可以适当的将它们分分类。例如单标签/双标签，块级元素/内联元素，或者根据功能分类。
@@ -176,16 +176,16 @@ https://www.w3school.com.cn/tags/index.asp
 ## 关于我
 * 一个推崇全栈开发的前端开发人员
 * 微信: itrzzh
-![微信号](../images/微信号.png)
+<div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
 
 * 公众号：全栈道
-![公众号](../images/公众号.jpg)
+<div style="text-align: center"><img src="../images/公众号.jpg" style="max-height: 200px;width: auto;"></div>
 
 * 个人网站：https://www.iotzzh.com
-![微信号](../images/个人网站.png)
+<div style="text-align: center"><img src="../images/个人网站.png" style="max-height: 200px;width: auto;"></div>
 
 * 知识星球：全栈道
-![微信号](../images/星球.jpg)
+<div style="text-align: center"><img src="../images/星球.jpg" style="max-height: 200px;width: auto;"></div>
 
 * B站：https://space.bilibili.com/285025688
 * 抖音：全栈道
@@ -194,4 +194,4 @@ https://www.w3school.com.cn/tags/index.asp
 
 ## 捐赠鼓励
 开源不易，如果《全栈道》对你有些帮助，可以请作者喝杯咖啡，算是对开源做出的一点点鼓励吧！
-![微信号](../images/打赏.jpg)
+<div style="text-align: center"><img src="../images/打赏.jpg" style="max-height: 200px;width: auto;"></div>

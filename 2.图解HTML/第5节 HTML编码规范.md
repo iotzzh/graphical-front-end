@@ -6,7 +6,7 @@
     <p style="background-color: red; display: inline;">这是p</p>
 </body>
 ```
-<div style="text-align: center"><img src="img/5示例1.jpg"></div>
+<div style="text-align: center"><img src="./img/5示例1.jpg"></div>
 通过上面的例子我们会发现，元素的样式，是可以通过css去改变的，所以变得非常灵活。**可是在真正得开发中，我们希望不同人开发的出来的代码都是尽可能一样的，包括标签的选取使用，属性的顺序等等。**
 
 以下的规范是参考：https://codeguide.bootcss.com/ 选取的关于HTML的编码规范，之后可能会根据自身需要进行修改成符合自身的规范。
@@ -160,16 +160,16 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 ## 关于我
 * 一个推崇全栈开发的前端开发人员
 * 微信: itrzzh
-![微信号](../images/微信号.png)
+<div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
 
 * 公众号：全栈道
-![公众号](../images/公众号.jpg)
+<div style="text-align: center"><img src="../images/公众号.jpg" style="max-height: 200px;width: auto;"></div>
 
 * 个人网站：https://www.iotzzh.com
-![微信号](../images/个人网站.png)
+<div style="text-align: center"><img src="../images/个人网站.png" style="max-height: 200px;width: auto;"></div>
 
 * 知识星球：全栈道
-![微信号](../images/星球.jpg)
+<div style="text-align: center"><img src="../images/星球.jpg" style="max-height: 200px;width: auto;"></div>
 
 * B站：https://space.bilibili.com/285025688
 * 抖音：全栈道
@@ -178,5 +178,4 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 
 ## 捐赠鼓励
 开源不易，如果《全栈道》对你有些帮助，可以请作者喝杯咖啡，算是对开源做出的一点点鼓励吧！
-![微信号](../images/打赏.jpg)
-
+<div style="text-align: center"><img src="../images/打赏.jpg" style="max-height: 200px;width: auto;"></div>
