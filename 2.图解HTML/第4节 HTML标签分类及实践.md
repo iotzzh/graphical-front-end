@@ -143,7 +143,7 @@
 
     <!-- <address> 定义文档作者或拥有者的联系信息。 -->
     <address>
-        地址 <a href="http://www.iotzzh.com">www.iotzzh.com</a>.<br>
+        地址 <a href="https://www.bing.com">www.iotzzh.com</a>.<br>
     </address>
 
     <b>加粗字体</b>
@@ -252,7 +252,7 @@
         <br><label for="">Reset:</label><input type="reset">
         <br><label for="">Search:</label><input type="search">
         <br><label for="">Time:</label><input type="time">
-        <br><label for="">Url:</label><input type="url" value="http://www.iotzzh.com">
+        <br><label for="">Url:</label><input type="url" value="https://www.bing.com">
         <br><label for="">Week:</label><input type="week">
     </form>
 </body>
@@ -281,7 +281,7 @@ frameset示例：
 <frameset cols="25%,50%,25%">
     <frame src="./表单标签.html" />
     <frame src="./格式标签.html" />
-    <frame src="http://www.iotzzh.com" />
+    <frame src="https://www.bing.com" />
 </frameset>
 </html>
 ```
@@ -297,7 +297,7 @@ iframe示例：
     <title>Document</title>
 </head>
 <body>
-    <iframe src="http://www.iotzzh.com" width="500px" height="500px" frameborder="0"></iframe>
+    <iframe src="https://www.bing.com" width="500px" height="500px" frameborder="0"></iframe>
 </body>
 </html>
 ```
@@ -332,11 +332,11 @@ iframe示例：
     <!-- map：带有可点击区域的图像映射 -->
     <map name="planetmap" id="planetmap">
         <!-- shap:default\rect\circ\poly -->
-        <area shape="circle" coords="60,60,10" href="http://www.iotzzh.com" target="_blank" alt="text1" />
+        <area shape="circle" coords="60,60,10" href="https://www.bing.com" target="_blank" alt="text1" />
 
-        <area shape="circle" coords="50,50,10" href="http://www.iotzzh.com" target="_blank" alt="text2" />
+        <area shape="circle" coords="50,50,10" href="https://www.bing.com" target="_blank" alt="text2" />
 
-        <area shape="rect" coords="0,0,50,50" href="http://www.iotzzh.com" target="_blank" alt="text3" />
+        <area shape="rect" coords="0,0,50,50" href="https://www.bing.com" target="_blank" alt="text3" />
     </map>
 
     <p><b>注释：</b>img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），所以我们同时向 map 元素添加了 "id" 和 "name" 属性。</p>
@@ -426,11 +426,11 @@ iframe示例：
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/bootstrap-table/1.1.4/bootstrap-table.min.css">
 </head>
 <body>
-    <a href="http://www.iotzzh.com">Home</a>
+    <a href="https://www.bing.com">Home</a>
     <nav>
-        <a href="http://www.iotzzh.com">Home</a>
-        <a href="http://www.iotzzh.com">Previous</a>
-        <a href="http://www.iotzzh.com">Next</a>
+        <a href="https://www.bing.com">Home</a>
+        <a href="https://www.bing.com">Previous</a>
+        <a href="https://www.bing.com">Next</a>
     </nav>
 </body>
 </html>
@@ -644,7 +644,7 @@ iframe示例：
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="小张微站" content="HTML,ASP,PHP,SQL">
     <title>小张微站</title>
-    <base href="http://www.iotzzh.com" />
+    <base href="https://www.bing.com" />
     <base target="_blank" />
 </head>
 <body>
