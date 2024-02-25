@@ -1,5 +1,6 @@
  <div style="text-align: center"><img src="./asset/浮动与清除/img/浮动与清除概要.jpg" ></div>
-#### 文档流
+
+## 文档流
 css中的块级元素在页面中是独占一行的，自上而下排列，也就是我们所说的流，通常我们称之为文档流或标准流。
 示例：
 ```html
