@@ -706,20 +706,18 @@ iframe示例：
 
 ## 关于我
 * 一个推崇全栈开发的前端开发人员
-* 微信: itrzzh
+* 如果你想找我聊聊，可以添加我的 - 微信: itrzzh
 <div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
 
-* 公众号：全栈道
+* 如果你想及时订阅我的发布文章或者获取资料，可以关注我的 - 公众号：全栈道
 <div style="text-align: center"><img src="../images/公众号.jpg" style="max-height: 200px;width: auto;"></div>
 
-* 个人网站：https://www.iotzzh.com
-<div style="text-align: center"><img src="../images/个人网站.png" style="max-height: 200px;width: auto;"></div>
-
-* 知识星球：全栈道
+* 如果你想让我帮忙改简历、获取知识手册、学习面试资料、学习路线等，请加入我的 - 知识星球：全栈道
 <div style="text-align: center"><img src="../images/星球.jpg" style="max-height: 200px;width: auto;"></div>
 
+* 个人网站：https://www.iotzzh.com
 * B站：https://space.bilibili.com/285025688
-* 抖音：全栈道
+* 抖音/快手：全栈道
 * github：https://github.com/iotzzh
 * gitee: https://gitee.com/iotzzh
 
