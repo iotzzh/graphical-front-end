@@ -12,21 +12,22 @@ CSS全称为Cascading Style Sheets，中文翻译为“层叠样式表”，简�
 
 ## CSS如何使用
 在使用前，我们需要了解下CSS使用的使用规则，即语法。
+### 语法
 ```HTML
 选择器 { 属性1：属性值； 属性2：属性值}
 ```
 
 既然已经知道了CSS的基础语法，我们看看它的如何配合HTML或者说HTML是如何使用CSS让自身变得更加美丽动人的。
 
+### 使用方式
 CSS可以通过四种方式添加到HTML中
 * 内联样式：在HTML元素中使用`style`属性
 * 内部样式表： 在HTML文档头部`<head>`区域使用`<style>`元素来包含CSS
 * 外部引用：使用外部CSS文件
 * @import url():使用@import指令（一种at规则）（要注意的是，@import指令必须出现在样式表中其他样式之前，否则@import引用的样式表不会被加载）
 
-示例：
+### 举个例子
 index.html
-
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -118,3 +119,24 @@ em和ex都是字体大小的单位，em表示一种字体中字母M的宽度；e
 * RGB百分比值（R%,G%,B%）:如rgb(1%，2%，80%)
 * HSL（色相，饱和度%，亮度）：格式：HSL(0%,0%,0%)
 * Alpha通道：RGB和HSL都支持Alpha，相应的格式分别叫RGBA和HSLA
+
+## 关于我
+* 一个推崇全栈开发的前端开发人员
+* 如果你想找我聊聊，可以添加我的 - 微信: itrzzh
+<div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
+
+* 如果你想及时订阅我的发布文章或者获取资料，可以关注我的 - 公众号：全栈道
+<div style="text-align: center"><img src="../images/公众号.jpg" style="max-height: 200px;width: auto;"></div>
+
+* 如果你想让我帮忙改简历、获取知识手册、学习面试资料、学习路线等，请加入我的 - 知识星球：全栈道
+<div style="text-align: center"><img src="../images/星球.jpg" style="max-height: 200px;width: auto;"></div>
+
+* 个人网站：https://www.iotzzh.com
+* B站：https://space.bilibili.com/285025688
+* 抖音/快手：全栈道
+* github：https://github.com/iotzzh
+* gitee: https://gitee.com/iotzzh
+
+## 捐赠鼓励
+开源不易，如果《全栈道》对你有些帮助，可以请作者喝杯咖啡，算是对开源做出的一点点鼓励吧！
+<div style="text-align: center"><img src="../images/打赏.jpg" style="max-height: 200px;width: auto;"></div>
