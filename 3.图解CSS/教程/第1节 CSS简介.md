@@ -1,3 +1,6 @@
+<div style="text-align: center"><img src="./asset/CSS简介/img/CSS简介.png" ></div>
+
+
 在学习一门新的知识之前，我们需要先知道，它是什么，为什么使用，和怎么使用，也就是常说的3W（what， why，how）。
 
 ## CSS是什么？
