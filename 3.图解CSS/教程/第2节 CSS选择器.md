@@ -1,3 +1,5 @@
+<div style="text-align: center"><img src="./asset/选择器/img/CSS选择器.png"></div>
+
 在CSS简介一节中，我们了解到，CSS的语法如下：
 
 ```HTML
@@ -12,15 +14,20 @@
 
 ### 基于祖先
 语法
+
 ```css
 祖先标签 子标签 {声明}
 ```
+
 或
+
 ```css
 祖先标签 ... 父标签 子标签 {声明}
 ```
 这里的祖先标签可以是子标签的父标签，也可以是子标签的任何一个上级标签。
+
 示例：
+
 ```html
 <head>
     <meta charset="UTF-8">
@@ -47,15 +54,18 @@
     </article>
 </body>
 ```
+
 <div style="text-align: center"><img src="./asset/选择器/img/基于祖先选择.jpg"></div>
 
 #### 子选择符 ```>```
 语法：
+
 ```css
 父标签>子标签
 ```
 此时父标签必须包裹着子标签，也就是子标签的父元素只能是父标签。
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -88,15 +98,21 @@
 ```
 
 <div style="text-align: center"><img src="./asset/选择器/img/子选择符.jpg"></div>
+
 该示例只是在基于父标签选择符的示例上加了子选择符，跨级选择的header中的还h3就不起作用了。
 
 #### 紧邻同胞选择符```+```
+
 语法：
+
 ```css
 标签1 + 标签2
 ```
+
 标签2必须紧跟在其同胞标签1的后面。
+
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -126,16 +142,21 @@
 </body>
 </html>
 ```
+
 <div style="text-align: center"><img src="./asset/选择器/img/紧邻同胞选择符.jpg"></div>
 
 
 #### 一般同胞选择符```~```
+
 语法：
 ```css
 标签1~标签2
 ```
+
 标签2必须跟（不一定紧跟）在其同胞标签1后面。
+
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -168,8 +189,11 @@
 <div style="text-align: center"><img src="./asset/选择器/img/一般同胞选择符.jpg"></div>
 
 #### 通用选择符```*```
+
 *是一个通配符，匹配任何元素
+
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -199,27 +223,37 @@
 </body>
 </html>
 ```
+
 <div style="text-align: center"><img src="./asset/选择器/img/通配符.jpg"></div>
 
 ## ID和类选择符
+
 ID和类为我们选择元素提供了另一套手段，利用它们可以不用考虑文档的层次结构。只要在HTML标记中为元素添加了id和class属性，就可以在CSS选择符中使用ID和类名，直接选中文档中特定的区域。
+
 ###### 注意
 > id和clss不能以数字或特殊符号开头。id具有唯一性，一篇HTML文档不能具有相同命名的id。
 
 ## class属性
 常规 语法：
+
 ```css
 .类名{声明}
 ```
+
 标签带类选择符，语法：
+
 ```css
 标签.类名{声明}
 ```
+
 多类选择符，语法：
+
 ```css
 .类名1 .类名2{声明}
 ```
+
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -242,19 +276,26 @@ ID和类为我们选择元素提供了另一套手段，利用它们可以不用
 </body>
 </html>
 ```
+
 <div style="text-align: center"><img src="./asset/选择器/img/class选择符.jpg"></div>
 
 ## id属性
+
 id与class类似，id选择符使用“#”选择。
 常规 语法：
+
 ```css
 #id{声明}
 ```
+
 标签带id选择符，语法：
+
 ```css
 标签#id{声明}
 ```
+
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -276,21 +317,30 @@ id与class类似，id选择符使用“#”选择。
 </body>
 </html>
 ```
+
 <div style="text-align: center"><img src="./asset/选择器/img/id选择符.jpg"></div>
+
 从上面的示例中可以看出，class和id还是有很多相似的地方，那么该如何选择呢？
+
 ###### id 还是 class？
+
 个人观点：**能不用就都不用，使用上下文选择符。如果为了调整样式使用class，为了操作数据，配合JavaScript使用id。**
 
 ## 属性选择符
+
 语法：
 ```css
 标签名[属性名]
 ```
+
 或
+
 ```
 标签名[属性名="属性值"]
 ```
+
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -310,18 +360,22 @@ id与class类似，id选择符使用“#”选择。
 </body>
 </html>
 ```
+
 <div style="text-align: center"><img src="./asset/选择器/img/属性选择符.jpg"></div>
 
 ## 伪类
+
 伪类这个叫法源自它们与类相似，但实际上并没有类会附加到标记中的标签上。伪类分两种，UI伪类和结构化伪类。
 * UI（User Interfact,用户界面）伪类会在HTML元素处于某个状态时（比如鼠标指针位于链接上），为该元素应用CSS样式
 * 结构化伪类会在标记中存在某种结构上的关系时（如某个元素是一组元素中的第一个或最后一个），为相应元素应用CSS样式
 
 ### UI伪类
+
 UI伪类会基于特定HTML元素的状态应用样式。最常使用UI伪类的元素是链接（a元素），利用UI伪类，链接可以在用户鼠标悬停时改变文本颜色，或者去掉文本的下划线等等。
 一个冒号(:)表示伪类，两个冒号(::)表示CSS3新增的为元素。
 
 #### 链接伪类
+
 针对链接伪类一共有4个：
 * link: 待被点击
 * visited: 用户此前点击过这个链接
@@ -359,6 +413,7 @@ UI伪类会基于特定HTML元素的状态应用样式。最常使用UI伪类的
 
 #### focus伪类和target伪类
 * focus伪类：获得焦点时的样式
+
 ```
 语法 任何标签：focus{声明}
 ```
@@ -366,6 +421,7 @@ UI伪类会基于特定HTML元素的状态应用样式。最常使用UI伪类的
 * target伪类：如果用户点击一个指定页面其他元素的链接，则那个元素就是目标（target），可以用：target伪类选中它。
 
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -393,6 +449,7 @@ UI伪类会基于特定HTML元素的状态应用样式。最常使用UI伪类的
 </body>
 </html>
 ```
+
 <div style="text-align: center"><img src="./asset/选择器/img/focus和target.gif"></div>
 
 #### 结构化伪类
@@ -406,6 +463,7 @@ UI伪类会基于特定HTML元素的状态应用样式。最常使用UI伪类的
 ###### :nth-child(n或odd/even)
 
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -471,6 +529,7 @@ UI伪类会基于特定HTML元素的状态应用样式。最常使用UI伪类的
 可用于在特定元素前面或后面添加特殊内容
 
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -503,3 +562,24 @@ UI伪类会基于特定HTML元素的状态应用样式。最常使用UI伪类的
 ```
 
 <div style="text-align: center"><img src="./asset/选择器/img/伪元素.jpg"></div>
+
+## 关于我
+* 一个推崇全栈开发的前端开发人员
+* 如果你想找我聊聊，可以添加我的 - 微信: itrzzh
+<div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
+
+* 如果你想及时订阅我的发布文章或者获取资料，可以关注我的 - 公众号：全栈道
+<div style="text-align: center"><img src="../images/公众号.jpg" style="max-height: 200px;width: auto;"></div>
+
+* 如果你想让我帮忙改简历、获取知识手册、学习面试资料、学习路线等，请加入我的 - 知识星球：全栈道
+<div style="text-align: center"><img src="../images/星球.jpg" style="max-height: 200px;width: auto;"></div>
+
+* 个人网站：https://www.iotzzh.com
+* B站：https://space.bilibili.com/285025688
+* 抖音/快手：全栈道
+* github：https://github.com/iotzzh
+* gitee: https://gitee.com/iotzzh
+
+## 捐赠鼓励
+开源不易，如果《全栈道》对你有些帮助，可以请作者喝杯咖啡，算是对开源做出的一点点鼓励吧！
+<div style="text-align: center"><img src="../images/打赏.jpg" style="max-height: 200px;width: auto;"></div>

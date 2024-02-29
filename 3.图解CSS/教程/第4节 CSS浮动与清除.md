@@ -182,7 +182,9 @@ float: inherit; // 规定应该从父元素继承 float 属性的值。
 **解决办法二：clearfix**
 clearfix的方式清除浮动
  <div style="text-align: center"><img src="./asset/浮动与清除/img/clear解决高度塌陷问题.jpg" ></div>
+
 通用方案：
+
 ```css
 // 现代浏览器clearfix方案，不支持IE6/7
 .clearfix:after {
@@ -228,6 +230,7 @@ clearfix的方式清除浮动
  <div style="text-align: center"><img src="./asset/浮动与清除/img/适用场景内联.jpg" ></div>
 
 参考地址：
+
 https://www.cnblogs.com/guanghe/p/10070574.html
 
 https://www.jianshu.com/p/09bd5873bed4
@@ -243,3 +246,25 @@ https://zhuanlan.zhihu.com/p/81091987
 https://www.imooc.com/article/283829
 
 https://blog.csdn.net/chenxi_li/article/details/95192904
+
+## 关于我
+* 一个推崇全栈开发的前端开发人员
+* 如果你想找我聊聊，可以添加我的 - 微信: itrzzh
+<div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
+
+* 如果你想及时订阅我的发布文章或者获取资料，可以关注我的 - 公众号：全栈道
+<div style="text-align: center"><img src="../images/公众号.jpg" style="max-height: 200px;width: auto;"></div>
+
+* 如果你想让我帮忙改简历、获取知识手册、学习面试资料、学习路线等，请加入我的 - 知识星球：全栈道
+<div style="text-align: center"><img src="../images/星球.jpg" style="max-height: 200px;width: auto;"></div>
+
+* 个人网站：https://www.iotzzh.com
+* B站：https://space.bilibili.com/285025688
+* 抖音/快手：全栈道
+* github：https://github.com/iotzzh
+* gitee: https://gitee.com/iotzzh
+
+## 捐赠鼓励
+开源不易，如果《全栈道》对你有些帮助，可以请作者喝杯咖啡，算是对开源做出的一点点鼓励吧！
+<div style="text-align: center"><img src="../images/打赏.jpg" style="max-height: 200px;width: auto;"></div>
+
