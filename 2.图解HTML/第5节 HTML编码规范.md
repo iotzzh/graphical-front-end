@@ -161,30 +161,6 @@ class 用于标识高度可复用组件，因此应该排在首位。id 用于�
 
 ## 关于我
 * 一个推崇全栈开发的前端开发人员
-* 微信: itrzzh
-<div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
-
-* 公众号：全栈道
-<div style="text-align: center"><img src="../images/公众号.jpg" style="max-height: 200px;width: auto;"></div>
-
-* 个人网站：https://www.iotzzh.com
-<div style="text-align: center"><img src="../images/个人网站.png" style="max-height: 200px;width: auto;"></div>
-
-* 知识星球：全栈道
-<div style="text-align: center"><img src="../images/星球.jpg" style="max-height: 200px;width: auto;"></div>
-
-* B站：https://space.bilibili.com/285025688
-* 抖音：全栈道
-* github：https://github.com/iotzzh
-* gitee: https://gitee.com/iotzzh
-
-## 捐赠鼓励
-开源不易，如果《全栈道》对你有些帮助，可以请作者喝杯咖啡，算是对开源做出的一点点鼓励吧！
-<div style="text-align: center"><img src="../images/打赏.jpg" style="max-height: 200px;width: auto;"></div>
-
-
-## 关于我
-* 一个推崇全栈开发的前端开发人员
 * 如果你想找我聊聊，可以添加我的 - 微信: itrzzh
 <div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
 

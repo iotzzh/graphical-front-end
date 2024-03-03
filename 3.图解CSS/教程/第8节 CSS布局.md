@@ -1,4 +1,5 @@
-![](./asset/布局/布局概述.jpg)
+<div style="text-align: center"><img src="./asset/布局/布局概述.jpg"></div>
+
 ## 何为布局
 此处说的布局是对HTML界面元素的布局，也就是对网页中的元素进行位置上的安排。
 那么我们为什么需要布局和如何布局呢？
@@ -22,7 +23,7 @@ table布局相对容易，但是在开发中并不常用，一方面标签书写
 
 ## table布局
 利用table可以进行布局，但是使用table布局有些得不偿失，更多的还是使用table进行表格的设计。为什么说得不偿失呢？我们来看看table的优缺点：
-#### tables的缺点
+### tables的缺点
 * Table要比其它html标记占更多的字节。(延迟下载时间，占用服务器更多的流量资源。)
 * Tablle会阻挡浏览器渲染引擎的渲染顺序。(会延迟页面的生成速度，让用户等待更久的时间。)
 * Table里显示图片时需要你把单个、有逻辑性的图片切成多个图。(增加设计的复杂度，增加页面加载时间，增加HTTP会话数。)
@@ -33,11 +34,12 @@ table布局相对容易，但是在开发中并不常用，一方面标签书写
 * table代码会让阅读者抓狂。(不但无法利用CSS，而且会你不知所云)
 * table一旦设计完成就变成死的，很难通过CSS让它展现新的面貌。
 
-#### Tables的优点
+### Tables的优点
 在某些场合，使用Table是100%的适合、恰当和正确。比如，用table做表格是完全正确的。
 
 虽然不推荐，但是还是使用table做个布局看看~
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -78,6 +80,7 @@ table布局相对容易，但是在开发中并不常用，一方面标签书写
 </body>
 </html>
 ```
+
 ![](./asset/布局/table布局1.jpg)
 
 ## 传统布局
@@ -86,6 +89,7 @@ table布局相对容易，但是在开发中并不常用，一方面标签书写
 float知识点可参考《CSS浮动与清除》一节。float布局是布局中常见的一种方式，但是需要注意高度塌陷的问题。
 
 示例：
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -117,18 +121,21 @@ float知识点可参考《CSS浮动与清除》一节。float布局是布局中�
 </body>
 </html>
 ```
+
 ![](./asset/布局/float布局1.jpg)
 
 ## flex布局
 参考地址：
 
 http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html
+
 https://www.runoob.com/w3cnote/flex-grammar.html
+
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 
 2009年，W3C提出了一种新的方案—-Flex布局，可以简便、完整、响应式地实现各种页面布局。目前，它已经得到了所有浏览器的支持，这意味着，现在就能很安全地使用这项功能。
 
-#### flex布局是什么
+### flex布局是什么
 Flex 是 Flexible Box 的缩写，意为"弹性布局"，用来为盒状模型提供最大的灵活性。
 任何一个容器都可以指定为 Flex 布局:
 ```css
@@ -152,7 +159,7 @@ Webkit 内核的浏览器，必须加上-webkit前缀:
 
 **注意，设为 Flex 布局以后，子元素的float、clear和vertical-align属性将失效。**
 
-#### 基本概念
+### 基本概念
 采用 Flex 布局的元素，称为 Flex 容器（flex container），简称"容器"。它的所有子元素自动成为容器成员，称为 Flex 项目（flex item），简称"项目"。
 ![](./asset/布局/flex布局1.jpg)
 容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；交叉轴的开始位置叫做cross start，结束位置叫做cross end。
@@ -521,19 +528,23 @@ flex是flex-grow, flex-shrink 和 flex-basis的简写，默认值为0 1 auto。�
 ## Grid布局
 参考网址：
 https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Grid_Layout
+
 http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html
+
 https://www.html.cn/archives/8510
+
 https://www.w3cschool.cn/lugfe/lugfe-ckg225zp.html
+
 https://www.jianshu.com/p/d183265a8dad
 
-#### 有了flex布局，为什么还需要grid布局呢？
+### 有了flex布局，为什么还需要grid布局呢？
 Grid 布局与 Flex 布局有一定的相似性，都可以指定容器内部多个项目的位置。但是，它们也存在重大区别。
 Flex 布局是轴线布局，只能指定"项目"针对轴线的位置，可以看作是一维布局。Grid 布局则是将容器划分成"行"和"列"，产生单元格，然后指定"项目所在"的单元格，可以看作是二维布局。
 
-#### 概述
+### 概述
 它将网页划分成一个个网格，可以任意组合不同的网格，做出各种各样的布局。以前，只能通过复杂的 CSS 框架达到的效果，现在浏览器内置了。
 
-#### 基本概念
+### 基本概念
 * 容器和项目
 采用网格布局的区域，称为"容器"（container）。容器内部采用网格定位的子元素，称为"项目"（item）。
 * 行和列
@@ -545,11 +556,12 @@ Flex 布局是轴线布局，只能指定"项目"针对轴线的位置，可以�
 划分网格的线，称为"网格线"（grid line）。水平网格线划分出行，垂直网格线划分出列。
 正常情况下，n行有n + 1根水平网格线，m列有m + 1根垂直网格线，比如三行就有四根水平网格线。
 
-#### 容器属性
-###### display
+### 容器属性
+#### display
 display: grid | inline-grid;
 注意，设为网格布局以后，容器子元素（项目）的float、display: inline-block、display: table-cell、vertical-align和column-*等设置都将失效。
-###### grid-template-columns,grid-template-rows 
+
+#### grid-template-columns,grid-template-rows 
 容器指定了网格布局以后，接着就要划分行和列。grid-template-columns属性定义每一列的列宽，grid-template-rows属性定义每一行的行高。
 ```html
 .container {
@@ -622,8 +634,9 @@ grid-template-columns属性对于网页布局非常有用。两栏式布局只�
 grid-template-columns: repeat(12, 1fr);
 ```
 
-###### 示例
+### 示例
 ![](./asset/布局/grid布局1.jpg)
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -689,6 +702,7 @@ grid-template-columns: repeat(12, 1fr);
 </body>
 </html>
 ```
+
 * grid-row-gap 属性，grid-column-gap 属性,grid-gap 属性
 grid-row-gap属性设置行与行的间隔（行间距），grid-column-gap属性设置列与列的间隔（列间距）。
 ```css
@@ -752,6 +766,7 @@ place-content: <align-content> <justify-content>
 * grid-auto-columns 属性，grid-auto-rows 属性
 有时候，一些项目的指定位置，在现有网格的外部。比如网格只有3列，但是某一个项目指定在第5行。这时，浏览器会自动生成多余的网格，以便放置项目。
 grid-auto-columns属性和grid-auto-rows属性用来设置，浏览器自动创建的多余网格的列宽和行高。它们的写法与grid-template-columns和grid-template-rows完全相同。如果不指定这两个属性，浏览器完全根据单元格内容的大小，决定新增网格的列宽和行高。
+
 ```css
 .container {
   display: grid;
@@ -765,7 +780,7 @@ grid-auto-columns属性和grid-auto-rows属性用来设置，浏览器自动创�
 grid-template属性是grid-template-columns、grid-template-rows和grid-template-areas这三个属性的合并简写形式。
 grid属性是grid-template-rows、grid-template-columns、grid-template-areas、 grid-auto-rows、grid-auto-columns、grid-auto-flow这六个属性的合并简写形式。
 
-###### 项目属性
+### 项目属性
 * grid-column-start 属性，grid-column-end 属性，grid-row-start 属性，grid-row-end 属性
 项目的位置是可以指定的，具体方法就是指定项目的四个边框，分别定位在哪根网格线。
 grid-column-start属性：左边框所在的垂直网格线
@@ -784,3 +799,25 @@ grid-area属性还可用作grid-row-start、grid-column-start、grid-row-end、g
 justify-self属性设置单元格内容的水平位置（左中右），跟justify-items属性的用法完全一致，但只作用于单个项目。
 align-self属性设置单元格内容的垂直位置（上中下），跟align-items属性的用法完全一致，也是只作用于单个项目。
 place-self属性是align-self属性和justify-self属性的合并简写形式。
+
+## 关于我
+* 一个推崇全栈开发的前端开发人员
+* 如果你想找我聊聊，可以添加我的 - 微信: itrzzh
+<div style="text-align: center"><img src="../images/微信号.png" style="max-height: 200px;width: auto;"></div>
+
+* 如果你想及时订阅我的发布文章或者获取资料，可以关注我的 - 公众号：全栈道
+<div style="text-align: center"><img src="../images/公众号.jpg" style="max-height: 200px;width: auto;"></div>
+
+* 如果你想让我帮忙改简历、获取知识手册、学习面试资料、学习路线等，请加入我的 - 知识星球：全栈道
+<div style="text-align: center"><img src="../images/星球.jpg" style="max-height: 200px;width: auto;"></div>
+
+* 个人网站：https://www.iotzzh.com
+* B站：https://space.bilibili.com/285025688
+* 抖音/快手：全栈道
+* github：https://github.com/iotzzh
+* gitee: https://gitee.com/iotzzh
+
+## 捐赠鼓励
+开源不易，如果《全栈道》对你有些帮助，可以请作者喝杯咖啡，算是对开源做出的一点点鼓励吧！
+<div style="text-align: center"><img src="../images/打赏.jpg" style="max-height: 200px;width: auto;"></div>
+

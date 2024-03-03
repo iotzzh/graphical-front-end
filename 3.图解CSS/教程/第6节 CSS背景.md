@@ -70,7 +70,7 @@ background-size:contain; // 缩放图片，使其恰好适合背景区，保持�
 示例：
 <div style="text-align: center"><img src="./asset/背景/背景尺寸.jpg" ></div>
 
-#### 背景粘附
+## 背景粘附
 background-attachment 属性控制滚动元素内的背景图片是否随元素滚动而移动。这个属性的默认值是scroll ，即背景图片随元素移动。如果把它的值改为 fixed ，那么背景图片不会随元素滚动而移动。
 
 示例：
@@ -105,7 +105,7 @@ url('') no-repeat 10px 120px...;
 ## 背景渐变
 渐变分两种，一种线性渐变，一种放射性渐变。线性渐变从元素的一端延伸到另一
 端，放射性渐变则从元素内一点向四周发散。
-###### 线性渐变语法:
+### 线性渐变语法:
 ```css
 /* 渐变轴为45度，从蓝色渐变到红色 */
 linear-gradient(45deg, blue, red);
