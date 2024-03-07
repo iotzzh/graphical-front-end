@@ -1,4 +1,4 @@
-![](./ES基础/JavaScript使用方式.png)
+![](./assets/JavaScript使用方式.png)
 
 JS是解释性语言，所以不需要搭建类似C#/Java之类的开发运行环境，因为他们是编译型语言。JS一般运行在浏览器中或者node环境中，这里都是JS引擎的功劳。
 
@@ -6,7 +6,7 @@ JS是解释性语言，所以不需要搭建类似C#/Java之类的开发运行�
 推荐使用nvm管理node版本，nrm管理代理地址。
 安装node：https://nodejs.org/en/
 然后随便写一个JS文件，运行node命令运行即可：
-![](./ES%E5%9F%BA%E7%A1%80/node-run.png)
+![](./assets/node-run.png)
 
 ## HTML中使用
 在html中使用方式有两种：
@@ -14,8 +14,8 @@ JS是解释性语言，所以不需要搭建类似C#/Java之类的开发运行�
 第一种，直接嵌入到html中进行使用
 
 第二种，写到单独的文件中，在html中引用
-![](./ES%E5%9F%BA%E7%A1%80/html-use-js.png)
-![](./ES%E5%9F%BA%E7%A1%80/html-use-js-1.png)
+![](./assets/html-use-js.png)
+![](./assets/html-use-js-1.png)
 
 
 ## 扩展

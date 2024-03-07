@@ -1,4 +1,4 @@
-![](./ES基础/JavaScript特点.png)
+![](./assets/JavaScript特点.png)
 学习一门计算机语言，先要弄清楚它是什么，学习的目的是什么，如何实现的，然后再又目标地进行系统的学习。
 
 那它是什么呢？
@@ -9,7 +9,7 @@
 
 ## Javascript特点
 
-![](./ES基础/JavaScript特点.png)
+![](./assets/JavaScript特点.png)
 #### Javascript是一种面向对象的语言
 首先我们要明白什么是对象，在学习C#或JAVA时，常用的一句话就是：万物皆对象。面向对象是一种思想。面向对象，能让你写出质量高，效率高，易维护，易扩展等更优质的代码。Javascript里面也可以使用面向对象的思想进行编程。
 JS中的对象跟C#或JAVA等面向对象语言中的对象并不一样，它们有着本质上的区别。其他面向对象的语言都有封装、继承、多态，而JS只有封装、继承，没有多态。
@@ -30,11 +30,11 @@ javascript中的object类型对象是使用function类型对象创建的。javas
 ## Javascript的内存模型
 Javascript本质是一个对象，一个对象可以包含多个属性，对象的属性可以分为直接量和对象两种类型，而对象又分为object对象和function对象两种类型。
 直接量和对象两种类型的属性在内存中的保存方式不同。直接量是直接用两块内存分别保存属性名和属性值，而对象需要三块内存，分别保存属性名、属性地址和属性内容，如下图：
-![直接量属性和对象属性的内存模型](./ES基础/直接量属性和对象属性的内存模型.png)
+![直接量属性和对象属性的内存模型](./assets/直接量属性和对象属性的内存模型.png)
 
 ## Javascript组成
 JS主要由三部分组成：ES、DOM、BOM。
-![JS组成](./ES基础/JavaScript组成.png)
+![JS组成](./assets/JavaScript组成.png)
 * ECMAScript: (3/5/6/7)它是JS语言的标准,规定了JS的编程语法和基础核心知识
 * DOM: document object model 文档对象模型,提供给JS很多操作页面中元素的属性和方法
 * BOM: browser object model 浏览器对象模型 ,提供了很多操作浏览器 的属性方法,而这些方法都存放在window浏览器对象上。
