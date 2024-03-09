@@ -1,8 +1,13 @@
+![直接量属性和对象属性的内存模型](./assets/直接量属性和对象属性的内存模型.png)
+
+## 什么是直接量
+
 直接量是指不需要创建对象就可以直接使用的变量。ES中的直接量主要有三种类型：表示字符串的string类型、表示数字的number类型和表示true/false的boolean类型。当我们直接将值赋给变量后，ES就会自动判断其类型，而且当参数发生变化后，其类型也会自动跟着变化，即ES时一种弱类型的语言。
 直接量直接使用两块内存来保存它们的名值对，而不像对象类型需要3块内存。
-![直接量属性和对象属性的内存模型](./ES%E5%9F%BA%E7%A1%80/%E7%9B%B4%E6%8E%A5%E9%87%8F%E5%B1%9E%E6%80%A7%E5%92%8C%E5%AF%B9%E8%B1%A1%E5%B1%9E%E6%80%A7%E7%9A%84%E5%86%85%E5%AD%98%E6%A8%A1%E5%9E%8B.png)
 
-#### 直接量的封包与解包
+
+
+## 直接量的封包与解包
 ES中有一种叫做自动封包/解包的功能, 类似```.net/java```中的装箱/拆箱，其作用时在程序执行过程中按照需要自动在直接量和其对象的对象类型间进行转化。将直接量转换为对应的对象进行处理叫封包，反过来，将对象转换为直接量叫解包。
 
 代码示例：
@@ -16,13 +21,13 @@ console.log(typeof m); // object
 console.log(typeof n); // number
 ```
 
-#### 直接量的包装对象
+## 直接量的包装对象
 直接量所对应的对象叫做包装对象，string、number、boolean所对应的包装对象分别是String、Number、Boolean对象。它们都是function类型的对象。
 一个对象最重要的就是它所包含的属性，而function对象的属性又分为两大类，一类是它自身的属性，另一类是它所创建的object类型实例对象的属性，创建的实例对象的属性又分为实例自己的属性和function的prototype的属性。
 
-#### String对象
+## String对象
 String对象是function类型的对象，对应的是字符串类型，可用来创建字符串类型的object类型，例如： new String('abc');
-###### String自身的属性
+### String自身的属性
 String类型自身只有两个属性，一个prototype,另一个是fromCharCode。fromCharCode方法的作用是创建由Unicode值所对应的字符组成的字符串，需要一个或多个参数。
 代码示例：
 
@@ -31,7 +36,7 @@ var s = String.fromCharCode(97,98,99);
 console.log(s); // abc
 ```
 
-###### String.prototype中的属性
+### String.prototype中的属性
 * constructor: 默认指向Stirng对象本身
 * toString： 重写了toString方法，所以字符串的toString不会返回[object, Obejct]
 或者[object, String]而是返回字符串本身的值。
@@ -155,7 +160,7 @@ var s = ' Hello World    ';
 console.log(s.trim()); // Hello World
 ```
 
-###### String创建的对象实例的属性
+### String创建的对象实例的属性
 * length属性和类似于数组，属性名为0到length-1,属性值为序号所对应的字符：
 代码示例：
 ```javascript
@@ -164,9 +169,9 @@ console.log(s.length); // 11
 console.log(s[0]); // H
 ```
 
-#### Numver对象
+## Number对象
 Number对象是function类型的对象，对应的是数字类型，可用来创建数字类型的object对象。
-###### Number自身的属性
+### Number自身的属性
 * prototype：原型对象
 * MAX_VALUE: 用来表示最大的数，其值约为1.7976931348623175*10^308
 * MIN_VALUE: 用来表示最小数， 约为5*10^-324
@@ -174,7 +179,7 @@ Number对象是function类型的对象，对应的是数字类型，可用来创
 * NEGATIVE_INFINITY:表示负无穷大
 * POSITIVE_INFINITY: 表示正无穷大
 
-###### Number.prototype属性
+### Number.prototype属性
 * constructor: 这个属性默认指向Number对象本身
 * toString： Number的prototype重写了toString方法，重写后的toString方法会返回数字的字符串形式，还可以指定要转换为数字的基数，即指定几进制，默认十进制。
 代码示例：
@@ -218,15 +223,15 @@ console.log(123.456.toExponential(2)); // 1.23e+2
 console.log(123.456.toPrecision(4)); // 123.5
 console.log(123.456.toPrecision(2)); // 1.2e+2
 ```
-###### Number创建的示例对象的属性
+### Number创建的示例对象的属性
 Number创建的实例对象没有自己的命名属性。
 
-#### Boolean对象
+## Boolean对象
 Boolean对象是function类型的对象，对应的是布尔类型，可用来创建布尔类型的object实例对象。
-###### Boolean自身的属性
+### Boolean自身的属性
 只有一个prototype属性
 
-###### Boolean.prototype的属性
+### Boolean.prototype的属性
 Boolean的prototype一共有三个属性： constructor、toString和valueOf。constructor指向Boolean本身，toString和valueOf都返回实例对象的值，但它们类型不一样，toString返回的string类型，而valueOf返回boolean类型。
 代码示例：
 ```javascript
@@ -240,7 +245,7 @@ console.log(typeof b.toString()); // stirng
 console.log(typeof b.valueOf()); // boolean
 ```
 
-###### 多知道点： 如何在浏览器中产看对象的属性
+## 多知道点： 如何在浏览器中产看对象的属性
 代码示例：
 ```javascript
 // 获取String对象自身的属性
