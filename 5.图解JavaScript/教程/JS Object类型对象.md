@@ -1,4 +1,4 @@
-ES中一共由两种对象，function和object。object类型对象时ES的基础，它主要通过属性使用。
+ES中一共有两种对象，function和object。object类型对象时ES的基础，它主要通过属性使用。
 #### 创建object类型对象的三种方式
 ES中object类型的对象大致由三种创建方式：
 * 直接使用花括号创建
