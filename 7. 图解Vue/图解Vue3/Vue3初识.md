@@ -1,12 +1,16 @@
-## 初识
-#### vue.js是什么
+# Vue3初识
+## vue.js是什么
 vue是什么？官网首页就有答案：渐进式JavaScript框架。有灵活，易用，高效的特点。官网首页有详细的介绍:
+
 v2: https://cn.vuejs.org/v2/guide/
+
 V3：https://vuejs.org/
+
 V3中文：https://cn.vuejs.org/
+
 V3中文2: https://staging-cn.vuejs.org/
 
-#### 如何理解渐进式
+## 如何理解渐进式
 个人理解：
 * 易上手，可以逐渐深入学习
 * 初创项目很简单，没有多余的东西，根据需要不断添加插件扩展项目。
@@ -15,8 +19,8 @@ V3中文2: https://staging-cn.vuejs.org/
 
 与React，Angular一样，vue也是基于MVVM的一种架构模式。那么如何理解什么是MVVM呢？
 
-#### MVC->MVP(省略)->MVVM
-###### MVC
+## MVC->MVP(省略)->MVVM
+### MVC
 一般MVC的架构模式是前后端不分离，例如基于.net的ASP，基于java的JSP。那么为什么在MVC架构模式下开发的好好的，为什么还需要使用MVVM呢？我们用一张图来看看MVC模式做了什么。
 
 ![](./vue初识/mvc.png)
@@ -26,19 +30,19 @@ V3中文2: https://staging-cn.vuejs.org/
 * 规范的还不够严格，如果对MVC理解使用得不好可能会造成内部代码的混乱。例如多个controller对应多个model的情况，那样维护起来就有些麻烦。
 * 随着多端（桌面，h5,小程序）应用的发展，controller慢慢的不再是控制路由和逻辑，而仅仅是逻辑，作为数据接口使用，而不需要view的参与。
 
-###### MVVM
+### MVVM
 那么MVVM就很好吗？它本质上就是MVC的改进版，目前来看是不错的选择。
 
 MVVM（Model-View-ViewModel）框架的由来便是MVP（Model-View-Presenter）模式与WPF结合的应用方式时发展演变过来的一种新型架构框架。它立足于原有MVP框架并且把WPF的新特性糅合进去，以应对客户日益复杂的需求变化。
 
 所以，MVVM的产生由来已久。其实很多前端的一些概念，在后端早已应用，只是前端领域目前正如旭日东升，接纳百家之长而已。之前由于很多条件的限制下（带宽/客户端等），前端领域发展并不是很迅速，只需要完成简单的功能即可。随着社会的进步，人们已经不仅限于对功能的要求，还需要很好的用户体验，所以迎来了前端的春天。
-###### 插个话题
+### 插个话题
 这个就像计算机语言的不断封装优化一样：
 >机器语言 -> 汇编-> C -> C++ -> 
 基于c++ 封装： C#（2000）/java（20世纪90年代）
 基于c++ 解释： javascript（1995）（由于浏览器多由c++编写）
 
-###### 言归正传
+### 言归正传
 看看mvvm的架构模式：
 ![](./vue初识/mvvm.jpg)
 MVVM通过ViewModel为纽带，当view变化时，利用data binding , ViewModel会自动变化，反之亦然。
@@ -46,14 +50,14 @@ MVVM通过ViewModel为纽带，当view变化时，利用data binding , ViewModel
 ![](./vue初识/mvvm1.png)
 ![](./vue初识/mvvm2.png)
 
-#### 如何使用vue.js
+### 如何使用vue.js
 * 在页面上以 CDN package 的形式导入。
 * 使用 npm 安装它。
 * 使用官方的 CLI 来构建一个项目，它为现代前端工作流程提供了功能齐备的构建设置 (例如，热重载、保存时的提示等等)。
 
 常用的就是第一种和第三种，在之后的学习中都使用第三种使用方式。
 
-#### 项目搭建
+### 项目搭建
 准备环境: 
 官网要求：node version >= 15
 vs code
@@ -113,4 +117,5 @@ li {
 }
 </style>
 ```
+
 ![](./vue初识/../概述/../vue初识/example.gif)
