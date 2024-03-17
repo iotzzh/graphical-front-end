@@ -326,3 +326,43 @@ person.name = 'zzh';
 console.log(person.name); // zzh
 ```
 
+## Global与Window对象
+JS时面向对象的语言，或者说它本身就是一个大对象，就像一个大箱子里面装着很多大盒子，每个大盒子里面都装着小盒子....那么最顶层的箱子是什么呢？这个对象在ES标准中叫做Global对象。ES标准中规定Global对象要在进入执行环境前就已创建，它是所有对象的根对象，其他对下个你都是它的属性或者属性的属性。
+**这里的Global是表示功能的词，不代表具体的对象名。**事实上并不一定存在Global对象，但是每个具体的宿主环境都需要有一个Global对象，例如，浏览器中的window对象就是Global对象，所有其他对象都是window对象的属性或其属性的属性。例如，Stirng，Number，Boolean，Array，RegExp等对象都是window的属性，就连Object和Function也是window的属性对象。
+可利用：console.log(Object.getOwnPropertyNames(window));
+查看widow包含的属性，亲测包含1102个，有些可能并没有什么意义，但是多为有意义的属性。
+![](https://upload-images.jianshu.io/upload_images/2789632-e84a44f8aa2d9a7a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+### Window对象的特殊性
+浏览器的Global对象window是使用Window对象创建出来的，Window对象是function类型，window对象是obejct类型。用于创建window对象的Window对象跟我们自定义的function对象之间存在一些差别。
+* 不可以创建对象：我们自己创建的function对象可以使用new关键字来创建相应的object类型实例对象，但是Window对象不可以用于创建对象。
+* 不可以作为方法调用：Window也不可以作为方法来调用，也就是说，在程序中直接调用Window()也是不可以的，并且这种用法也没有实际意义。
+* 变量就是属性：在最外层定义的变量也叫做全局变量，与在function中定义的其他变量存在很大的区别。在最外层定义的变量会自动称为window对象的属性，而在普通function中变量和实例对象的属性是完全没有关系的两类数据。
+代码示例：
+
+```javascript
+var v = 1;
+
+// 通过修改this的属性可以改变全局变量的值
+this.v = 2;
+console.log(v); // 2
+
+// 通过修改全局变量的值也可以修改window对象同名属性的值
+v = 3;
+console.log(window.v); // 3
+
+// 我们自定义方法中变量和实例对象的属性是相互独立的
+function Obj(){
+	var v = 2;
+	this.v = 5;
+	console.log(v);	// 2
+	console.log(this.v); // 5
+}
+
+new Obj(); // 2
+```
+
+从上面的示例中可以看出，最外层定义的变量和this的属性及window的同名属性都是同一个，可以相互操作。但是，在我们自定义的function函数体内变量和属性之间存在严格区分，不可以相互调用。
+### 另外，window对象本身也是自己的一个属性
+可利用语句查看：console.log(Object.getOwnPropertyNames(window));
+![](https://upload-images.jianshu.io/upload_images/2789632-22a587fb1d40feaa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
