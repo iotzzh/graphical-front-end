@@ -3,7 +3,7 @@
 
 **它本身是一种对象，另外，它还可以创建对象， 而且可以对对象操作**
 
-##### function的作用：
+## function的作用：
 1. 作为对象来管理其中的属性
 2. 作为方法处理具体业务
 3. 创建对象
@@ -44,6 +44,7 @@ var f = F;
 var anonymous = function (b) {}
 var anony = anonymous;
 ```
+
 ## 二、用作对象
 JS中的函数本身也还是对象，是对象就可以有自己的属性。
 举例：
@@ -58,20 +59,7 @@ func.logVal(); // output: "go"
 ```
 
 ## 三、处理业务(功能)
-相关概念：
-* JS是弱类型语言
-* JS的变量使用var关键字来定义，当然ES6提出了使用let, const可以用来定义变量。
-* **var 定义的变量的作用域，这种变量的作用域是function级的**。
-* 严格模式（strict model）: ES5种引入了严格模式，严格模式下的JS程序需要比非严格模式下的程序更加规范，对语法有了比较严格的要求。
-* == 与===： ==比较转换后的值是否相等，===比较如果类型不同就会返回false。
-* for-in语句：可以便利对象的**属性**， 准确的来说是便利对象中可以遍历的属性。
-* for-of语句： 它可以直接获取属性的值。
-* try-catch-finally语句： catch(error)中的error有两个属性： error.name, error.message。
-* typeof语句：语法：typeof 变量，ES2015的返回值一共有7种： undefined、function、object、boolean、number、string、symbol；
-* null和数组类型都是object,因为努力了本身也是一个对象，而数组可以包含其他任何类型的元素，它并不是底层对象，所以它们没有自己独有的类型；、
-* 只要有名字但是没有赋值的变量都是undefined类型。
-* instanceof 语句：instanceof语句比typeof语句更进了一步，可以判断一个对象是不是某种类型的实例。instanceof语句的返回值未布尔类型，表示判断是否正确。
-举例：
+通过一些列的语句指令，完成一个功能，示例如下：
 ```javascript
 function testFunc () {
   try{
