@@ -50,14 +50,14 @@ MVVM通过ViewModel为纽带，当view变化时，利用data binding , ViewModel
 ![](./vue初识/mvvm1.png)
 ![](./vue初识/mvvm2.png)
 
-### 如何使用vue.js
+## 如何使用vue.js
 * 在页面上以 CDN package 的形式导入。
 * 使用 npm 安装它。
 * 使用官方的 CLI 来构建一个项目，它为现代前端工作流程提供了功能齐备的构建设置 (例如，热重载、保存时的提示等等)。
 
 常用的就是第一种和第三种，在之后的学习中都使用第三种使用方式。
 
-### 项目搭建
+## 项目搭建
 准备环境: 
 官网要求：node version >= 15
 vs code

@@ -1,3 +1,7 @@
+![](./assets/W3C%20DOM是什么.png)
+
+![](./assets/HTML%20DOM.png)
+
 ## DOM 概述
 
 ### 什么是 DOM？
