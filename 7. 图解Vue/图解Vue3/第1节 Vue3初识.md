@@ -23,7 +23,7 @@ V3中文2: https://staging-cn.vuejs.org/
 ### MVC
 一般MVC的架构模式是前后端不分离，例如基于.net的ASP，基于java的JSP。那么为什么在MVC架构模式下开发的好好的，为什么还需要使用MVVM呢？我们用一张图来看看MVC模式做了什么。
 
-![](./vue初识/mvc.png)
+![](./assets/vue初识/mvc.png)
 这是MVC的一个模型图，model对应数据，view对应视图，controller对应控制器。看起来是一个很好的闭环，view->controller->model->view,逻辑清晰，易于维护，那这里面存在什么问题呢？
 个人认为：
 * 前后端不分离，增加学习成本，人员问题
@@ -44,11 +44,11 @@ MVVM（Model-View-ViewModel）框架的由来便是MVP（Model-View-Presenter）
 
 ### 言归正传
 看看mvvm的架构模式：
-![](./vue初识/mvvm.jpg)
+![](./assets/vue初识/mvvm.jpg)
 MVVM通过ViewModel为纽带，当view变化时，利用data binding , ViewModel会自动变化，反之亦然。
 再从网上盗两张图（个人觉得还是很清晰的）：
-![](./vue初识/mvvm1.png)
-![](./vue初识/mvvm2.png)
+![](./assets/vue初识/mvvm1.png)
+![](./assets/vue初识/mvvm2.png)
 
 ## 如何使用vue.js
 * 在页面上以 CDN package 的形式导入。
@@ -66,11 +66,11 @@ vs code
 ```cmd
 npm init vue@latest
 ```
-![](./vue初识/../概述/crate-project.png)
+![](./assets/vue初识/../概述/crate-project.png)
 关于在新建时需要填写的选择项，在不清楚的情况下，先选择no，后期可以再添加，也可以增加印象。
 
 初建的项目结构如下：
-![](./vue初识/../概述/new-project.png)
+![](./assets/vue初识/../概述/new-project.png)
 
 在刚开始的时候，只需要关注main.js，App.vue即可,所以这里把多余的文件给删除了。
 
@@ -118,4 +118,4 @@ li {
 </style>
 ```
 
-![](./vue初识/../概述/../vue初识/example.gif)
+![](./assets/vue初识/../概述/../assets/vue初识/example.gif)

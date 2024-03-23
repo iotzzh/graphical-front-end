@@ -5,9 +5,10 @@
 * vs code 调试：先开启node服务，后启用vs code的调试模式
 
 具体使用如下：
-#### debugger调试法
+## debugger调试法
 当打开开发者模式时才会起作用(F12), 但是使用完之后将其删除，不然遗留在代码中，不利于自己与他人开发。一般配置文件，也不允许其出现，.eslintrc.json, rules: ```"no-debugger":"error"```
-```vue
+
+```javascript
 <template>
     <div>请求数据：{{ loginMsg }}</div>
     <button @click="loginBtn">点击获取mock数据</button>
@@ -29,7 +30,7 @@ const loginBtn = () => {
 ```
 ![](./assets/debugger-1.png)
 
-#### 浏览器调试法
+## 浏览器调试法
 在浏览器中调试是最常见的一种方式，即使部署了代码，只要将sourcemap打开（vite.config.ts->build->```sourcemap: true,```）即可。一般生产环境会将其关闭。
 
 我们在开发vue3的时候， 如果借用浏览器调试的话，需要安装一个浏览器插件：vue developtools。
@@ -37,15 +38,15 @@ const loginBtn = () => {
 这里仅说明如何调试与vue3相关的，其他还有关于dom/css等相关的调试修改，不在此处赘述。
 
 具体使用如下：
-###### 调试JS代码
+### 调试JS代码
 找到source中的文件，提前打好断点，然后触发事件：
 ![](./assets/debugger-2.png)
 
-###### 调式vue3组件
+### 调式vue3组件
 如果想看vue3各个组件的prop，data，pinia数据等，这里就需要借用vue developtools插件了。在这里，我们也可以对components中的数据进行修改，也会触发界面的重新渲染。
 ![](./assets/debugger-3.png)
 
-#### vs code调试法
+## vs code调试法
  &rarr; 启动项目服务
  &rarr; 启动vs code调试(F5)
  &rarr; Wab App(Chrome) 
