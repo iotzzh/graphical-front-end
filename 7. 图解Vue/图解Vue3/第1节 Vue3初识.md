@@ -118,4 +118,4 @@ li {
 </style>
 ```
 
-![](./assets/vue初识/../概述/../assets/vue初识/example.gif)
+![](./assets/vue初识/example.gif)
