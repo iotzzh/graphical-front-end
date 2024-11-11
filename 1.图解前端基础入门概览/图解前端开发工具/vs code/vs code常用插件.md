@@ -32,7 +32,8 @@ vscode图标主题，支持更换不同色系的图标，值得点出的是，�
 vscode不像IDE一样能够直接在浏览器中打开html，而该插件支持快捷键与鼠标右键快速在浏览器中打开html文件，支持自定义打开指定的浏览器，包括：Firefox，Chrome，Opera，IE以及Safari
 #### Prettier - Code formatter
 代码格式化工具
-
+#### better comments
+注释美化工具
 
 ## HTML
 #### HTML Snippets
