@@ -1,7 +1,7 @@
 TypeScript 与 JavaScript 类似，支持 Number 对象。
 Number 对象是原始数值的包装对象。
 语法：
-```
+```typescript
 var num = new Number(value);
 ```
 注意： 如果一个参数值不能转换为一个数字将返回 NaN (非数字值)。
@@ -12,7 +12,7 @@ var num = new Number(value);
 **NEGATIVE_INFINITY:**负无穷大，溢出时返回该值。该值小于 MIN_VALUE。
 **POSITIVE_INFINITY:**正无穷大，溢出时返回该值。该值大于 MAX_VALUE。
 代码示例:
-```
+```typescript
 console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
 console.log(Number.MIN_VALUE); // 5e-324
 console.log(Number.NaN); // NAN
@@ -29,7 +29,7 @@ console.log(Number.POSITIVE_INFINITY); // Infinity
 **valueOf():**返回一个 Number 对象的原始数字值。
 
 代码示例：
-```
+```typescript
 let num = new Number(12345678910.12345);
 console.log(num.toExponential()); // 1.234567891012345e+10
 console.log(num.toFixed(3)); // 12345678910.123
@@ -40,7 +40,7 @@ console.log(num.valueOf()); // 12345678910.12345
 ```
 
 附录(TS3.9.7接口部分源码):
-```
+```typescript
 interface Number {
     /**
      * Returns a string representation of an object.

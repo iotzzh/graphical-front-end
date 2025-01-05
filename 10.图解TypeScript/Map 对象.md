@@ -3,11 +3,11 @@ Map 对象保存键值对，并且能够记住键的原始插入顺序。
 Map 是 ES6 中引入的一种新的数据结构，可以参考 [ES6 Map 与 Set](https://www.runoob.com/w3cnote/es6-map-set.html)。
 
 #### 创建map
-```
+```typescript
 let myMap = new Map();
 ```
 or
-```
+```typescript
 let myMap = new Map([
         ["key1", "value1"],
         ["key2", "value2"]
@@ -24,7 +24,7 @@ let myMap = new Map([
 * map.values(): 返回一个新的Iterator对象，包含了Map对象中每个元素的值 。
 
 代码示例：
-```
+```typescript
 // interface Map<K, V> {
 //     clear(): void;
 //     delete(key: K): boolean;
@@ -45,30 +45,30 @@ let myMap = new Map([
 let myMap = new Map();
 
 // 设置值
-myMap.set('name', 'zzh');
+myMap.set('name', 'iotzzh');
 myMap.set('height', '172');
 myMap.set('age', '18');
 
 // 获取值
-console.log(myMap.get('name')); // zzh
+console.log(myMap.get('name')); // iotzzh
 
 // 判断是否包含某个key
 console.log(myMap.has('name')); // true
 
 console.log(myMap.keys()); //[Map Iterator] { 'name', 'height', 'age' }
 
-console.log(myMap.values()); // [Map Iterator] { 'zzh', '172', '18' }
+console.log(myMap.values()); // [Map Iterator] { 'iotzzh', '172', '18' }
 
 console.log(myMap.size); // 3
 
-// zzh:name
+// iotzzh:name
 // 172:height
 // 18:age
 myMap.forEach((key, value) => console.log(`${key}:${value}`));
 
 myMap.delete('height');
 
-// zzh:name
+// iotzzh:name
 // 18:age
 myMap.forEach((key, value) => console.log(`${key}:${value}`));
 

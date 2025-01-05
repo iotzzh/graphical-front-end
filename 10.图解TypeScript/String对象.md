@@ -1,6 +1,6 @@
 String 对象用于处理文本（字符串）。
 ###### 语法
-```
+```typescript
 var txt = new String("string");
 或者更简单方式：
 var txt = "string";
@@ -32,7 +32,7 @@ prototype:允许您向对象添加属性和方法。
 * valueOf()：返回指定字符串对象的原始值。
 
 代码示例：
-```
+```typescript
 let str = new String( "This is string" );
 console.log("str.constructor is:" + str.constructor) //str.constructor is:function String() { [native code] }
 
