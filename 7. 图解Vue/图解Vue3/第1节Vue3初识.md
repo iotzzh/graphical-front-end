@@ -26,6 +26,7 @@ V3中文2: https://staging-cn.vuejs.org/
 
 ![](./assets/vue初识/mvc.png)
 这是MVC的一个模型图，model对应数据，view对应视图，controller对应控制器。看起来是一个很好的闭环，view->controller->model->view,逻辑清晰，易于维护，那这里面存在什么问题呢？
+
 个人认为：
 * 前后端不分离，增加学习成本，人员问题
 * 规范的还不够严格，如果对MVC理解使用得不好可能会造成内部代码的混乱。例如多个controller对应多个model的情况，那样维护起来就有些麻烦。
