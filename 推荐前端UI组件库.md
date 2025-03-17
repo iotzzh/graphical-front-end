@@ -45,6 +45,10 @@ github: https://github.com/ant-design/ant-design-mobile
 
 ## 通用
 
+### uiverse
+描述：原生开源的ui组件库，有很多好看的组件
+地址：https://uiverse.io/elements
+
 ### Arco Design
 简述：同时支持vue3/react/mobile， 字节跳动出品的企业级设计系统。
 
