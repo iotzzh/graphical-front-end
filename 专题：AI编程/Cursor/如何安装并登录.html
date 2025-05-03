@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>如何安装并登录.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%E5%A6%82%E4%BD%95%E5%AE%89%E8%A3%85%E5%B9%B6%E7%99%BB%E5%BD%95cursor">如何安装并登录Cursor</h1>
+<h2 id="cursor%E7%AE%80%E4%BB%8B">Cursor简介</h2>
+<p>Cursor是一款革命性的AI辅助编程工具，它将强大的大语言模型与现代代码编辑器无缝集成。作为开发者，使用Cursor可以显著提升你的编程效率：</p>
+<ul>
+<li><strong>智能代码补全</strong>：根据上下文自动生成代码片段和函数</li>
+<li><strong>AI对话</strong>：直接在编辑器中与AI助手交流，解决编程问题</li>
+<li><strong>代码解释</strong>：一键理解复杂代码的功能和逻辑</li>
+<li><strong>代码重构</strong>：获取代码优化建议，提高代码质量</li>
+<li><strong>多语言支持</strong>：支持几乎所有主流编程语言</li>
+<li><strong>VSCode兼容</strong>：兼容大部分VSCode插件和主题</li>
+</ul>
+<p>下面我们将一步步指导你如何安装并登录Cursor，开启你的AI辅助编程之旅。</p>
+<h2 id="%E7%AC%AC%E4%B8%80%E6%AD%A5%E4%B8%8B%E8%BD%BDcursor">第一步：下载Cursor</h2>
+<p>访问Cursor官方网站：<a href="https://www.cursor.com">https://www.cursor.com</a>，点击下载按钮获取最新版本。</p>
+<p><img src="image/如何使用cursor/cursor-website.png" alt="Cursor官网"></p>
+<h2 id="%E7%AC%AC%E4%BA%8C%E6%AD%A5%E5%AE%89%E8%A3%85cursor">第二步：安装Cursor</h2>
+<p>下载完成后，运行安装程序并按照提示完成安装过程。安装过程简单直观，只需几分钟即可完成。</p>
+<p><img src="image/如何使用cursor/1742397988145.png" alt="安装Cursor"></p>
+<h2 id="%E7%AC%AC%E4%B8%89%E6%AD%A5%E7%99%BB%E5%BD%95cursor">第三步：登录Cursor</h2>
+<h3 id="31-%E6%B3%A8%E5%86%8C%E5%B9%B6%E7%99%BB%E5%BD%95github%E8%B4%A6%E5%8F%B7">3.1 注册并登录GitHub账号</h3>
+<p>Cursor使用GitHub账号进行身份验证。如果你还没有GitHub账号，需要先注册一个。</p>
+<p><img src="image/如何使用cursor/1742398063765.png" alt="GitHub登录"></p>
+<h3 id="32-%E6%89%93%E5%BC%80cursor%E8%AE%BE%E7%BD%AE">3.2 打开Cursor设置</h3>
+<p>启动Cursor后，点击右上角的设置图标，进入设置界面。</p>
+<p><img src="image/如何使用cursor/1742398300620.png" alt="打开设置"></p>
+<h3 id="33-%E9%80%89%E6%8B%A9github%E7%99%BB%E5%BD%95">3.3 选择GitHub登录</h3>
+<p>在设置界面中，选择使用GitHub账号登录。</p>
+<p><img src="image/如何使用cursor/1742398374727.png" alt="选择GitHub登录">
+<img src="image/如何使用cursor/1742398415813.png" alt="授权过程1">
+<img src="image/如何使用cursor/1742398446282.png" alt="授权过程2">
+<img src="image/如何使用cursor/1742398466422.png" alt="授权过程3"></p>
+<h3 id="34-%E7%99%BB%E5%BD%95%E6%88%90%E5%8A%9F">3.4 登录成功</h3>
+<p>完成授权后，你将看到登录成功的界面，现在你可以开始使用Cursor的所有功能了。</p>
+<p><img src="image/如何使用cursor/1742398521140.png" alt="登录成功"></p>
+<h2 id="%E4%B8%8B%E4%B8%80%E6%AD%A5">下一步</h2>
+<p>成功安装并登录Cursor后，你可以开始探索其强大的AI编程功能。在接下来的教程中，我们将详细介绍Cursor的界面布局和核心功能，帮助你充分利用这款强大的工具提升编程效率。</p>
+
+</body>
+</html>
